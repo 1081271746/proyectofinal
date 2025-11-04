@@ -42,6 +42,20 @@ export default function Experience() {
         {/* Content */}
         {tab === "academica" ? (
           <div className="space-y-6">
+            {/* Ingeniería de Software — Universidad Cooperativa de Colombia */}
+            <div className="border border-cyan-400 rounded-xl p-6 bg-[#0b1220] text-white shadow-[0_0_10px_#22d3ee]">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-cyan-400 text-xl">🎓</span>
+                <h3 className="text-xl font-semibold">Ingeniería de Software — 5º semestre</h3>
+              </div>
+              <p className="text-cyan-300 mb-1">Universidad Cooperativa de Colombia</p>
+              <p className="text-gray-400 mb-4">2025 - Presente</p>
+              <p className="text-gray-200">
+                Actualmente cursando quinto semestre, fortaleciendo bases de programación,
+                estructuras de datos, arquitectura de software y buenas prácticas de desarrollo.
+              </p>
+            </div>
+
             {/* Bachiller */}
             <div className="border border-cyan-400 rounded-xl p-6 bg-[#0b1220] text-white shadow-[0_0_10px_#22d3ee]">
               <div className="flex items-center gap-3 mb-2">
