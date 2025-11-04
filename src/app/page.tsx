@@ -217,6 +217,114 @@ export default function Home() {
                 <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">MongoDB</span>
               </div>
             </article>
+
+            {/* Proyecto 3: Carro a control remoto con Arduino */}
+            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">🚗</div>
+                <div>
+                  <h3 className="font-semibold text-slate-200">Carro a Control Remoto (Arduino) — 3er semestre</h3>
+                  <p className="mt-2 text-sm text-slate-300">
+                    Vehículo a control remoto construido con Arduino, orientado a aprender electrónica básica, programación de microcontroladores y control de motores.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <h4 className="text-sm font-semibold text-slate-200">Características principales:</h4>
+                <ul className="mt-2 space-y-1 text-sm text-slate-300">
+                  <li>• Control de dirección y velocidad</li>
+                  <li>• Comunicación inalámbrica (Bluetooth)</li>
+                  <li>• Integración de sensores para evitar obstáculos</li>
+                  <li>• Documentación y armado del circuito</li>
+                </ul>
+              </div>
+              <div className="mt-5 flex flex-wrap gap-2">
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">Arduino</span>
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">C++</span>
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">Electrónica</span>
+              </div>
+            </article>
+
+            {/* Proyecto 4: App de juegos cognitivos */}
+            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">🧠</div>
+                <div>
+                  <h3 className="font-semibold text-slate-200">App de Juegos Cognitivos (Trabajo en equipo)</h3>
+                  <p className="mt-2 text-sm text-slate-300">
+                    Aplicación enfocada en ejercicios de memoria, atención y lógica, con niveles, puntajes y seguimiento de progreso para usuarios.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <h4 className="text-sm font-semibold text-slate-200">Características principales:</h4>
+                <ul className="mt-2 space-y-1 text-sm text-slate-300">
+                  <li>• Múltiples minijuegos y niveles</li>
+                  <li>• Registro y estadísticas del usuario</li>
+                  <li>• UI accesible y adaptable</li>
+                  <li>• Trabajo colaborativo con control de versiones</li>
+                </ul>
+              </div>
+              <div className="mt-5 flex flex-wrap gap-2">
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">React</span>
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">TypeScript</span>
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">Firebase</span>
+              </div>
+            </article>
+
+            {/* Proyecto 5: Barbería (Agenda de citas) */}
+            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">✂️</div>
+                <div>
+                  <h3 className="font-semibold text-slate-200">Agenda de Citas para Barbería</h3>
+                  <p className="mt-2 text-sm text-slate-300">
+                    Sistema de agenda orientado a la gestión de citas, recordatorios y administración de barberos y servicios.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <h4 className="text-sm font-semibold text-slate-200">Características principales:</h4>
+                <ul className="mt-2 space-y-1 text-sm text-slate-300">
+                  <li>• Agenda semanal y vista de calendario</li>
+                  <li>• Recordatorios por correo</li>
+                  <li>• Panel de administración</li>
+                  <li>• Historial de clientes</li>
+                </ul>
+              </div>
+              <div className="mt-5 flex flex-wrap gap-2">
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">Next.js</span>
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">Node.js</span>
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">MongoDB</span>
+              </div>
+            </article>
+
+            {/* Proyecto 6: Página de restaurante de pedidos */}
+            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">🍽️</div>
+                <div>
+                  <h3 className="font-semibold text-slate-200">Página de Restaurante — Pedidos en línea</h3>
+                  <p className="mt-2 text-sm text-slate-300">
+                    Sitio web con menú digital, carrito de pedidos y panel de gestión básica para administrar productos y órdenes.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <h4 className="text-sm font-semibold text-slate-200">Características principales:</h4>
+                <ul className="mt-2 space-y-1 text-sm text-slate-300">
+                  <li>• Menú dinámico y filtrado por categorías</li>
+                  <li>• Carrito de compras y resumen de pedido</li>
+                  <li>• Pasarela de pago simulada</li>
+                  <li>• Panel básico para gestión de platos</li>
+                </ul>
+              </div>
+              <div className="mt-5 flex flex-wrap gap-2">
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">Next.js</span>
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">Tailwind</span>
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">Supabase</span>
+              </div>
+            </article>
           </div>
         </section>
       </div>
