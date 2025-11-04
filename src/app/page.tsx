@@ -152,6 +152,73 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Proyectos */}
+        <section id="proyectos" className="mx-auto max-w-6xl px-6 pb-20">
+          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-slate-200">
+            MIS PROYECTOS
+          </h2>
+          <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
+          <p className="mt-6 text-center text-slate-300 max-w-3xl mx-auto">
+            Aquí puedes ver algunos de los proyectos que he desarrollado, desde páginas web corporativas hasta aplicaciones web funcionales.
+          </p>
+
+          <div className="mt-10 grid md:grid-cols-2 gap-8">
+            {/* Proyecto 1 */}
+            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">🌐</div>
+                <div>
+                  <h3 className="font-semibold text-slate-200">Página Web para Negocio Familiar</h3>
+                  <p className="mt-2 text-sm text-slate-300">
+                    Desarrollo de una página web completa para el negocio de un familiar, incluyendo catálogo de productos, información de contacto y diseño responsive.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <h4 className="text-sm font-semibold text-slate-200">Características principales:</h4>
+                <ul className="mt-2 space-y-1 text-sm text-slate-300">
+                  <li>• Diseño responsive</li>
+                  <li>• Catálogo de productos</li>
+                  <li>• Formulario de contacto</li>
+                  <li>• Optimización SEO</li>
+                </ul>
+              </div>
+              <div className="mt-5 flex flex-wrap gap-2">
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">React</span>
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">CSS</span>
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">JavaScript</span>
+              </div>
+            </article>
+
+            {/* Proyecto 2 */}
+            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">📅</div>
+                <div>
+                  <h3 className="font-semibold text-slate-200">Sistema de Reservas para Barbería</h3>
+                  <p className="mt-2 text-sm text-slate-300">
+                    Aplicación web para gestionar reservas de citas en una barbería, con sistema de calendario y notificaciones.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <h4 className="text-sm font-semibold text-slate-200">Características principales:</h4>
+                <ul className="mt-2 space-y-1 text-sm text-slate-300">
+                  <li>• Sistema de reservas</li>
+                  <li>• Calendario interactivo</li>
+                  <li>• Gestión de clientes</li>
+                  <li>• Notificaciones automáticas</li>
+                </ul>
+              </div>
+              <div className="mt-5 flex flex-wrap gap-2">
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">React</span>
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">Node.js</span>
+                <span className="rounded-full border border-cyan-500/60 px-3 py-1 text-xs text-slate-200">MongoDB</span>
+              </div>
+            </article>
+          </div>
+        </section>
       </div>
     </main>
   );
