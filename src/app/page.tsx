@@ -144,8 +144,8 @@ export default function Home() {
                   <div>
                     <h3 className="font-semibold text-slate-200">Fan de Spider-Man</h3>
                     <p className="mt-1 text-sm text-slate-300">
-                      Me encanta la filosofía de "un gran poder conlleva una
-                      gran responsabilidad" y disfruto sus películas, cómics y
+                      Me encanta la filosofía de &quot;un gran poder conlleva una
+                      gran responsabilidad&quot; y disfruto sus películas, cómics y
                       videojuegos.
                     </p>
                   </div>
