@@ -92,6 +92,27 @@ export default function Experience() {
                 <li>• Apoyo en estrategias de ventas</li>
               </ul>
             </div>
+
+            {/* Desarrollador Web — Sistema de Reservas para Barbería */}
+            <div className="border border-cyan-400 rounded-xl p-6 bg-[#0b1220] text-white shadow-[0_0_10px_#22d3ee]">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-cyan-400 text-xl">💈</span>
+                <h3 className="text-xl font-semibold">Desarrollador Web — Sistema de Reservas para Barbería</h3>
+              </div>
+              <p className="text-cyan-300 mb-1">Barbería Local</p>
+              <p className="text-gray-400 mb-4">2023</p>
+              <p className="text-gray-200 mb-4">
+                Implementación de una aplicación web para la reserva de turnos, con calendario
+                interactivo, gestión de clientes y visualización de disponibilidad.
+              </p>
+              <p className="text-gray-300 font-semibold mb-2">Aportes destacados:</p>
+              <ul className="text-gray-200 space-y-2">
+                <li>• Sistema de reservas y calendario</li>
+                <li>• Gestión de clientes y citas</li>
+                <li>• Interfaz responsive y accesible</li>
+                <li>• Notificaciones básicas para recordatorios</li>
+              </ul>
+            </div>
           </div>
         )}
       </div>
