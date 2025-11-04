@@ -79,6 +79,79 @@ export default function Home() {
             </aside>
           </div>
         </section>
+
+        {/* Acerca de mí */}
+        <section id="acerca" className="mx-auto max-w-6xl px-6 pb-16">
+          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-slate-200">
+            ACERCA DE MÍ
+          </h2>
+          <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
+
+          <div className="mt-10 grid md:grid-cols-2 gap-10">
+            {/* Descripción izquierda */}
+            <div>
+              <p className="text-slate-300">
+                Soy un desarrollador web apasionado por la tecnología y la
+                creación de soluciones digitales innovadoras. Me caracterizo por
+                ser una persona dedicada, creativa y siempre en busca de nuevos
+                desafíos.
+              </p>
+              <p className="mt-6 text-slate-300">
+                Además de la programación, tengo otras pasiones que me definen
+                como persona y me ayudan a mantener un equilibrio en mi vida
+                profesional y personal.
+              </p>
+            </div>
+
+            {/* Tarjetas de intereses */}
+            <div className="space-y-6">
+              {/* Pasión por el fútbol */}
+              <div className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-5">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400 text-xl">⚽</div>
+                  <div>
+                    <h3 className="font-semibold text-slate-200">Pasión por el Fútbol</h3>
+                    <p className="mt-1 text-sm text-slate-300">
+                      El fútbol es una de mis grandes pasiones. Me ayuda a
+                      mantenerme activo, trabajar en equipo y desconectar del
+                      mundo digital.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Emprendimiento */}
+              <div className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-5">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400 text-xl">💼</div>
+                  <div>
+                    <h3 className="font-semibold text-slate-200">Emprendimiento</h3>
+                    <p className="mt-1 text-sm text-slate-300">
+                      Tengo experiencia emprendiendo y gestionando proyectos,
+                      lo que me ha enseñado sobre negocios, liderazgo y
+                      responsabilidad.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Fan de Spider-Man */}
+              <div className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-5">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400 text-xl">🕷️</div>
+                  <div>
+                    <h3 className="font-semibold text-slate-200">Fan de Spider-Man</h3>
+                    <p className="mt-1 text-sm text-slate-300">
+                      Me encanta la filosofía de "un gran poder conlleva una
+                      gran responsabilidad" y disfruto sus películas, cómics y
+                      videojuegos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );
