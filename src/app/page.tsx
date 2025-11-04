@@ -329,6 +329,65 @@ export default function Home() {
             </article>
           </div>
         </section>
+
+        {/* Experiencia */}
+        <section id="experiencia" className="mx-auto max-w-6xl px-6 pb-20">
+          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-slate-200">
+            EXPERIENCIA
+          </h2>
+          <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
+          <p className="mt-6 text-center text-slate-300 max-w-3xl mx-auto">
+            Mi trayectoria académica y profesional que me ha formado como persona y profesional.
+          </p>
+
+          {/* Tabs (estáticos) */}
+          <div className="mt-8 flex justify-center">
+            <div className="flex rounded-full border border-cyan-500/60 bg-slate-900/60 p-1">
+              <span className="rounded-full bg-cyan-500/80 px-6 py-2 text-sm font-semibold text-slate-900">
+                ACADÉMICA
+              </span>
+              <span className="px-6 py-2 text-sm font-semibold text-slate-300">
+                LABORAL
+              </span>
+            </div>
+          </div>
+
+          <div className="mt-10 space-y-6">
+            {/* Bachiller */}
+            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl">🎓</div>
+                <div className="flex-1">
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                    <h3 className="font-semibold text-slate-200">Bachiller</h3>
+                    <span className="text-cyan-400 text-sm">Colegio Felipense</span>
+                    <span className="text-slate-400 text-sm">📅 2011 - 2022</span>
+                  </div>
+                  <p className="mt-3 text-sm text-slate-300">
+                    Graduado con excelentes calificaciones, desarrollando habilidades de liderazgo y trabajo en equipo.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            {/* Cursos de Inglés */}
+            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl">🗣️</div>
+                <div className="flex-1">
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                    <h3 className="font-semibold text-slate-200">Cursos de Inglés</h3>
+                    <span className="text-cyan-400 text-sm">Varios Institutos</span>
+                    <span className="text-slate-400 text-sm">📅 2020 - 2023</span>
+                  </div>
+                  <p className="mt-3 text-sm text-slate-300">
+                    Múltiples cursos de inglés para mejorar las habilidades comunicativas y acceso a recursos técnicos internacionales.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
       </div>
     </main>
   );
