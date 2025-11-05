@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Experience from "./components/Experience";
+import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   return (
@@ -406,6 +407,76 @@ export default function Home() {
                 </div>
               </div>
             </article>
+          </div>
+        </section>
+
+        {/* Contacto */}
+        <section id="contacto" className="mx-auto max-w-6xl px-6 pb-20 mt-16 md:mt-24">
+          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-slate-200">
+            CONTACTO
+          </h2>
+          <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
+          <p className="mt-6 text-center text-slate-300 max-w-3xl mx-auto">
+            ¿Tienes un proyecto en mente? Me encantaría escuchar de ti y discutir cómo puedo ayudarte.
+          </p>
+
+          <div className="mt-10 grid md:grid-cols-2 gap-8">
+            {/* Información de contacto */}
+            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+              <h3 className="text-lg font-semibold text-slate-200">INFORMACIÓN DE CONTACTO</h3>
+              <div className="mt-6 space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400">✉</div>
+                  <div>
+                    <p className="text-sm text-slate-400">Email</p>
+                    <p className="text-sm text-slate-200">sebtiarrojas06@gmail.com</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400">📞</div>
+                  <div>
+                    <p className="text-sm text-slate-400">Teléfono</p>
+                    <p className="text-sm text-slate-200">3164485328</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400">📍</div>
+                  <div>
+                    <p className="text-sm text-slate-400">Ubicación</p>
+                    <p className="text-sm text-slate-200">Colombia</p>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-6">
+                <p className="text-sm text-slate-300">Sígueme en:</p>
+                <div className="mt-3 flex items-center gap-3">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                    className="h-9 w-9 flex items-center justify-center rounded-md bg-slate-800 border border-cyan-500/60 text-slate-200 hover:text-cyan-400"
+                  >🐙</a>
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                    className="h-9 w-9 flex items-center justify-center rounded-md bg-slate-800 border border-cyan-500/60 text-slate-200 hover:text-cyan-400"
+                  >in</a>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                    className="h-9 w-9 flex items-center justify-center rounded-md bg-slate-800 border border-cyan-500/60 text-slate-200 hover:text-cyan-400"
+                  >📷</a>
+                </div>
+              </div>
+            </article>
+
+            {/* Formulario de contacto (cliente con fallback) */}
+            <ContactForm />
           </div>
         </section>
       </div>
