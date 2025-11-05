@@ -15,8 +15,8 @@ export default function Footer() {
 
         {/* Columna 2: Enlaces rápidos */}
         <div>
-          <h4 className="text-cyan-400 font-bold tracking-wide">ENLACES RÁPIDOS</h4>
-          <ul className="mt-3 space-y-2 text-sm text-slate-200">
+          <h4 className="text-cyan-400 font-bold tracking-wide md:text-center">ENLACES RÁPIDOS</h4>
+          <ul className="mt-3 space-y-2 text-sm text-slate-200 md:text-center">
             <li><a className="hover:text-cyan-400" href="#inicio">Inicio</a></li>
             <li><a className="hover:text-cyan-400" href="#acerca">Acerca de mí</a></li>
             <li><a className="hover:text-cyan-400" href="#proyectos">Proyectos</a></li>
