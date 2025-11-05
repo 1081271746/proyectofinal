@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Experience from "./components/Experience";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       {/* Marco exterior similar a la imagen */}
       <div className="mx-4 my-4 rounded-md border border-cyan-500/60">
         {/* Navegación superior */}
-        <header className="sticky top-0 z-10 bg-slate-950/70 backdrop-blur">
+        <header className="sticky top-0 z-10 bg-[#0b1220]/80 backdrop-blur">
           <nav className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
             <a href="#inicio" className="text-cyan-400 font-bold tracking-wide">
               SEBASTIAN
@@ -60,7 +61,7 @@ export default function Home() {
             </div>
 
             {/* Columna derecha: tarjeta de perfil */}
-            <aside className="mx-auto w-full max-w-sm rounded-lg border border-cyan-500/60 bg-slate-900/60 p-5">
+            <aside className="mx-auto w-full max-w-sm rounded-lg border border-cyan-500/60 bg-[#0b1220] p-5">
               <div className="flex flex-col items-center text-center">
                 <div className="relative h-28 w-28 rounded-full ring-2 ring-cyan-500/70 p-1 mb-3">
                   <div className="rounded-full overflow-hidden">
@@ -110,7 +111,7 @@ export default function Home() {
             {/* Tarjetas de intereses */}
             <div className="space-y-6">
               {/* Pasión por el fútbol */}
-              <div className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-5">
+              <div className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-5">
                 <div className="flex items-start gap-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400 text-xl">⚽</div>
                   <div>
@@ -125,7 +126,7 @@ export default function Home() {
               </div>
 
               {/* Emprendimiento */}
-              <div className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-5">
+              <div className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-5">
                 <div className="flex items-start gap-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400 text-xl">💼</div>
                   <div>
@@ -140,7 +141,7 @@ export default function Home() {
               </div>
 
               {/* Fan de Spider-Man */}
-              <div className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-5">
+              <div className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-5">
                 <div className="flex items-start gap-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400 text-xl">🕷️</div>
                   <div>
@@ -169,7 +170,7 @@ export default function Home() {
 
           <div className="mt-10 grid md:grid-cols-2 gap-8">
             {/* Proyecto 1 */}
-            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+            <article className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6">
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">🌐</div>
                 <div>
@@ -196,7 +197,7 @@ export default function Home() {
             </article>
 
             {/* Proyecto 2 */}
-            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+            <article className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6">
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">📅</div>
                 <div>
@@ -223,7 +224,7 @@ export default function Home() {
             </article>
 
             {/* Proyecto 3: Carro a control remoto con Arduino */}
-            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+            <article className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6">
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">🚗</div>
                 <div>
@@ -250,7 +251,7 @@ export default function Home() {
             </article>
 
             {/* Proyecto 4: App de juegos cognitivos */}
-            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+            <article className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6">
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">🧠</div>
                 <div>
@@ -277,7 +278,7 @@ export default function Home() {
             </article>
 
             {/* Proyecto 5: Barbería (Agenda de citas) */}
-            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+            <article className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6">
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">✂️</div>
                 <div>
@@ -304,7 +305,7 @@ export default function Home() {
             </article>
 
             {/* Proyecto 6: Página de restaurante de pedidos */}
-            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+            <article className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6">
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">🍽️</div>
                 <div>
@@ -348,7 +349,7 @@ export default function Home() {
 
           <div className="mt-10 grid md:grid-cols-3 gap-6">
             {/* Testimonio 1 */}
-            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+            <article className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6">
               <div className="flex items-start justify-between">
                 <div className="text-cyan-400 text-sm">★★★★★</div>
                 <div className="text-cyan-400 text-xl font-bold">”</div>
@@ -455,21 +456,21 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub"
-                    className="h-9 w-9 flex items-center justify-center rounded-md bg-slate-800 border border-cyan-500/60 text-slate-200 hover:text-cyan-400"
+                  className="h-9 w-9 flex items-center justify-center rounded-md bg-[#0f172a] border border-cyan-500/60 text-slate-200 hover:text-cyan-400"
                   >🐙</a>
                   <a
                     href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                    className="h-9 w-9 flex items-center justify-center rounded-md bg-slate-800 border border-cyan-500/60 text-slate-200 hover:text-cyan-400"
+                  className="h-9 w-9 flex items-center justify-center rounded-md bg-[#0f172a] border border-cyan-500/60 text-slate-200 hover:text-cyan-400"
                   >in</a>
                   <a
                     href="https://www.instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
-                    className="h-9 w-9 flex items-center justify-center rounded-md bg-slate-800 border border-cyan-500/60 text-slate-200 hover:text-cyan-400"
+                  className="h-9 w-9 flex items-center justify-center rounded-md bg-[#0f172a] border border-cyan-500/60 text-slate-200 hover:text-cyan-400"
                   >📷</a>
                 </div>
               </div>
@@ -479,6 +480,9 @@ export default function Home() {
             <ContactForm />
           </div>
         </section>
+
+        {/* Footer */}
+        <Footer />
       </div>
     </main>
   );

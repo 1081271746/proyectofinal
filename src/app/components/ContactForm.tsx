@@ -29,7 +29,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6" onSubmit={(e) => e.preventDefault()}>
+    <form className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6" onSubmit={(e) => e.preventDefault()}>
       <h3 className="text-lg font-semibold text-slate-200">ENVÍAME UN MENSAJE</h3>
       <div className="mt-6 grid md:grid-cols-2 gap-4">
         <div>
@@ -39,7 +39,7 @@ export default function ContactForm() {
             placeholder="Tu nombre"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+            className="mt-1 w-full rounded-md border border-slate-700 bg-[#0f172a] px-3 py-2 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           />
         </div>
         <div>
@@ -49,7 +49,7 @@ export default function ContactForm() {
             placeholder="tu@email.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+            className="mt-1 w-full rounded-md border border-slate-700 bg-[#0f172a] px-3 py-2 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           />
         </div>
       </div>
@@ -60,7 +60,7 @@ export default function ContactForm() {
           placeholder="Asunto del mensaje"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
-          className="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+          className="mt-1 w-full rounded-md border border-slate-700 bg-[#0f172a] px-3 py-2 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
         />
       </div>
       <div className="mt-4">
@@ -70,7 +70,7 @@ export default function ContactForm() {
           rows={4}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="mt-1 w-full rounded-md border border-slate-700 bg-slate-800 px-3 py-2 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+          className="mt-1 w-full rounded-md border border-slate-700 bg-[#0f172a] px-3 py-2 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
         ></textarea>
       </div>
       <div className="mt-6 flex gap-3">
@@ -89,7 +89,7 @@ export default function ContactForm() {
               setInfo("Email copiado: sebtiarrojas06@gmail.com");
             } catch {}
           }}
-          className="inline-flex items-center gap-2 rounded-md border border-cyan-500/60 bg-slate-800 px-4 py-2 text-sm text-slate-200 hover:bg-slate-700"
+          className="inline-flex items-center gap-2 rounded-md border border-cyan-500/60 bg-[#0f172a] px-4 py-2 text-sm text-slate-200 hover:bg-slate-700"
         >
           📋 Copiar email
         </button>
