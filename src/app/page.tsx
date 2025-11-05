@@ -333,6 +333,81 @@ export default function Home() {
 
         {/* Experiencia (interactiva) */}
         <Experience />
+
+        {/* Testimonios */}
+        <section id="testimonios" className="mx-auto max-w-6xl px-6 pb-20">
+          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-slate-200">
+            Testimonios
+          </h2>
+          <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
+          <p className="mt-6 text-center text-slate-300 max-w-3xl mx-auto">
+            Lo que dicen las personas que han trabajado conmigo sobre mi trabajo y
+            profesionalismo.
+          </p>
+
+          <div className="mt-10 grid md:grid-cols-3 gap-6">
+            {/* Testimonio 1 */}
+            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+              <div className="flex items-start justify-between">
+                <div className="text-cyan-400 text-sm">★★★★★</div>
+                <div className="text-cyan-400 text-xl font-bold">”</div>
+              </div>
+              <p className="mt-4 text-sm text-slate-300 italic">
+                "Sebastian es un excelente compañero de estudios y deportista. Su dedicación tanto
+                en el código como en el campo de fútbol es admirable. Siempre está dispuesto a
+                ayudar y compartir conocimientos."
+              </p>
+              <div className="mt-6 h-px bg-slate-700/60" />
+              <div className="mt-4 flex items-center gap-4">
+                <div className="h-10 w-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">👤</div>
+                <div>
+                  <p className="text-slate-200 text-sm font-semibold">Juan Pablo Lucero</p>
+                  <p className="text-slate-400 text-xs">Estudiante de Software</p>
+                </div>
+              </div>
+            </article>
+
+            {/* Testimonio 2 */}
+            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+              <div className="flex items-start justify-between">
+                <div className="text-cyan-400 text-sm">★★★★★</div>
+                <div className="text-cyan-400 text-xl font-bold">”</div>
+              </div>
+              <p className="mt-4 text-sm text-slate-300 italic">
+                "Conocí a Sebastian en el curso de desarrollo web y es increíble su capacidad para
+                resolver problemas. Además es un gran deportista y muy buen amigo. Su página web quedó perfecta."
+              </p>
+              <div className="mt-6 h-px bg-slate-700/60" />
+              <div className="mt-4 flex items-center gap-4">
+                <div className="h-10 w-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">👤</div>
+                <div>
+                  <p className="text-slate-200 text-sm font-semibold">Ubeimar Yepez</p>
+                  <p className="text-slate-400 text-xs">Estudiante de Software</p>
+                </div>
+              </div>
+            </article>
+
+            {/* Testimonio 3 */}
+            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+              <div className="flex items-start justify-between">
+                <div className="text-cyan-400 text-sm">★★★★★</div>
+                <div className="text-cyan-400 text-xl font-bold">”</div>
+              </div>
+              <p className="mt-4 text-sm text-slate-300 italic">
+                "Sebastian combina perfectamente la pasión por la tecnología con el deporte. Es
+                muy responsable, creativo y siempre entrega trabajos de calidad. Un gran compañero de estudios."
+              </p>
+              <div className="mt-6 h-px bg-slate-700/60" />
+              <div className="mt-4 flex items-center gap-4">
+                <div className="h-10 w-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">👤</div>
+                <div>
+                  <p className="text-slate-200 text-sm font-semibold">Yuly Bastidas</p>
+                  <p className="text-slate-400 text-xs">Estudiante de Software</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
       </div>
     </main>
   );
