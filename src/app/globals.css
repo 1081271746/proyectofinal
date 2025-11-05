@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Paleta unificada oscuro */
+  --background: #0b1220; /* azul oscuro base */
+  --foreground: #e2e8f0; /* texto claro (equiv. slate-200) */
 }
 
 @theme inline {
@@ -12,12 +13,8 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Mantener el mismo esquema en todos los dispositivos */
+/* (el modo oscuro es el estilo principal del portafolio) */
 
 body {
   background: var(--background);

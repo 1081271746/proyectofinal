@@ -33,7 +33,7 @@ export default function ContactForm() {
       <h3 className="text-lg font-semibold text-slate-200">ENVÍAME UN MENSAJE</h3>
       <div className="mt-6 grid md:grid-cols-2 gap-4">
         <div>
-          <label className="text-sm text-slate-300">Nombre</label>
+          <label className="text-sm text-slate-200">Nombre</label>
           <input
             type="text"
             placeholder="Tu nombre"
@@ -43,7 +43,7 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label className="text-sm text-slate-300">Email</label>
+          <label className="text-sm text-slate-200">Email</label>
           <input
             type="email"
             placeholder="tu@email.com"
@@ -54,7 +54,7 @@ export default function ContactForm() {
         </div>
       </div>
       <div className="mt-4">
-        <label className="text-sm text-slate-300">Asunto</label>
+        <label className="text-sm text-slate-200">Asunto</label>
         <input
           type="text"
           placeholder="Asunto del mensaje"
@@ -64,7 +64,7 @@ export default function ContactForm() {
         />
       </div>
       <div className="mt-4">
-        <label className="text-sm text-slate-300">Mensaje</label>
+        <label className="text-sm text-slate-200">Mensaje</label>
         <textarea
           placeholder="Cuéntame sobre tu proyecto..."
           rows={4}
@@ -95,7 +95,7 @@ export default function ContactForm() {
         </button>
       </div>
       {info && (
-        <p className="mt-3 text-xs text-slate-300" aria-live="polite">{info}</p>
+        <p className="mt-3 text-xs text-slate-200" aria-live="polite">{info}</p>
       )}
     </form>
   );

@@ -95,13 +95,13 @@ export default function Home() {
           <div className="mt-10 grid md:grid-cols-2 gap-10">
             {/* Descripción izquierda */}
             <div>
-              <p className="text-slate-300">
+              <p className="text-slate-200">
                 Soy un desarrollador web apasionado por la tecnología y la
                 creación de soluciones digitales innovadoras. Me caracterizo por
                 ser una persona dedicada, creativa y siempre en busca de nuevos
                 desafíos.
               </p>
-              <p className="mt-6 text-slate-300">
+              <p className="mt-6 text-slate-200">
                 Además de la programación, tengo otras pasiones que me definen
                 como persona y me ayudan a mantener un equilibrio en mi vida
                 profesional y personal.
@@ -116,7 +116,7 @@ export default function Home() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400 text-xl">⚽</div>
                   <div>
                     <h3 className="font-semibold text-slate-200">Pasión por el Fútbol</h3>
-                    <p className="mt-1 text-sm text-slate-300">
+                    <p className="mt-1 text-sm text-slate-200">
                       El fútbol es una de mis grandes pasiones. Me ayuda a
                       mantenerme activo, trabajar en equipo y desconectar del
                       mundo digital.
@@ -131,7 +131,7 @@ export default function Home() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400 text-xl">💼</div>
                   <div>
                     <h3 className="font-semibold text-slate-200">Emprendimiento</h3>
-                    <p className="mt-1 text-sm text-slate-300">
+                    <p className="mt-1 text-sm text-slate-200">
                       Tengo experiencia emprendiendo y gestionando proyectos,
                       lo que me ha enseñado sobre negocios, liderazgo y
                       responsabilidad.
@@ -146,7 +146,7 @@ export default function Home() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400 text-xl">🕷️</div>
                   <div>
                     <h3 className="font-semibold text-slate-200">Fan de Spider-Man</h3>
-                    <p className="mt-1 text-sm text-slate-300">
+                    <p className="mt-1 text-sm text-slate-200">
                       Me encanta la filosofía de &quot;un gran poder conlleva una
                       gran responsabilidad&quot; y disfruto sus películas, cómics y
                       videojuegos.
@@ -164,7 +164,7 @@ export default function Home() {
             MIS PROYECTOS
           </h2>
           <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
-          <p className="mt-6 text-center text-slate-300 max-w-3xl mx-auto">
+          <p className="mt-6 text-center text-slate-200 max-w-3xl mx-auto">
             Aquí puedes ver algunos de los proyectos que he desarrollado, desde páginas web corporativas hasta aplicaciones web funcionales.
           </p>
 
@@ -354,7 +354,7 @@ export default function Home() {
                 <div className="text-cyan-400 text-sm">★★★★★</div>
                 <div className="text-cyan-400 text-xl font-bold">”</div>
               </div>
-              <p className="mt-4 text-sm text-slate-300 italic">
+              <p className="mt-4 text-sm text-slate-200 italic">
                 "Sebastian es un excelente compañero de estudios y deportista. Su dedicación tanto
                 en el código como en el campo de fútbol es admirable. Siempre está dispuesto a
                 ayudar y compartir conocimientos."
@@ -364,18 +364,18 @@ export default function Home() {
                 <div className="h-10 w-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">👤</div>
                 <div>
                   <p className="text-slate-200 text-sm font-semibold">Juan Pablo Lucero</p>
-                  <p className="text-slate-400 text-xs">Estudiante de Software</p>
+                  <p className="text-slate-300 text-xs">Estudiante de Software</p>
                 </div>
               </div>
             </article>
 
             {/* Testimonio 2 */}
-            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+            <article className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6">
               <div className="flex items-start justify-between">
                 <div className="text-cyan-400 text-sm">★★★★★</div>
                 <div className="text-cyan-400 text-xl font-bold">”</div>
               </div>
-              <p className="mt-4 text-sm text-slate-300 italic">
+              <p className="mt-4 text-sm text-slate-200 italic">
                 "Conocí a Sebastian en el curso de desarrollo web y es increíble su capacidad para
                 resolver problemas. Además es un gran deportista y muy buen amigo. Su página web quedó perfecta."
               </p>
@@ -384,18 +384,18 @@ export default function Home() {
                 <div className="h-10 w-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">👤</div>
                 <div>
                   <p className="text-slate-200 text-sm font-semibold">Ubeimar Yepez</p>
-                  <p className="text-slate-400 text-xs">Estudiante de Software</p>
+                  <p className="text-slate-300 text-xs">Estudiante de Software</p>
                 </div>
               </div>
             </article>
 
             {/* Testimonio 3 */}
-            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+            <article className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6">
               <div className="flex items-start justify-between">
                 <div className="text-cyan-400 text-sm">★★★★★</div>
                 <div className="text-cyan-400 text-xl font-bold">”</div>
               </div>
-              <p className="mt-4 text-sm text-slate-300 italic">
+              <p className="mt-4 text-sm text-slate-200 italic">
                 "Sebastian combina perfectamente la pasión por la tecnología con el deporte. Es
                 muy responsable, creativo y siempre entrega trabajos de calidad. Un gran compañero de estudios."
               </p>
@@ -404,7 +404,7 @@ export default function Home() {
                 <div className="h-10 w-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">👤</div>
                 <div>
                   <p className="text-slate-200 text-sm font-semibold">Yuly Bastidas</p>
-                  <p className="text-slate-400 text-xs">Estudiante de Software</p>
+                  <p className="text-slate-300 text-xs">Estudiante de Software</p>
                 </div>
               </div>
             </article>
@@ -417,13 +417,13 @@ export default function Home() {
             CONTACTO
           </h2>
           <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
-          <p className="mt-6 text-center text-slate-300 max-w-3xl mx-auto">
+          <p className="mt-6 text-center text-slate-200 max-w-3xl mx-auto">
             ¿Tienes un proyecto en mente? Me encantaría escuchar de ti y discutir cómo puedo ayudarte.
           </p>
 
           <div className="mt-10 grid md:grid-cols-2 gap-8">
             {/* Información de contacto */}
-            <article className="rounded-lg border border-cyan-500/60 bg-slate-900/60 p-6">
+            <article className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6">
               <h3 className="text-lg font-semibold text-slate-200">INFORMACIÓN DE CONTACTO</h3>
               <div className="mt-6 space-y-4">
                 <div className="flex items-center gap-3">
@@ -449,7 +449,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-6">
-                <p className="text-sm text-slate-300">Sígueme en:</p>
+                <p className="text-sm text-slate-200">Sígueme en:</p>
                 <div className="mt-3 flex items-center gap-3">
                   <a
                     href="https://github.com/"
