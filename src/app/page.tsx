@@ -84,7 +84,7 @@ export default function Home() {
         </section>
 
         {/* Acerca de mí */}
-        <section id="acerca" className="mx-auto max-w-6xl px-6 pb-16">
+        <section id="acerca" className="mx-auto max-w-6xl px-6 pb-16 mt-16 md:mt-24">
           <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-slate-200">
             ACERCA DE MÍ
           </h2>
@@ -157,7 +157,7 @@ export default function Home() {
         </section>
 
         {/* Proyectos */}
-        <section id="proyectos" className="mx-auto max-w-6xl px-6 pb-20">
+        <section id="proyectos" className="mx-auto max-w-6xl px-6 pb-20 mt-16 md:mt-24">
           <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-slate-200">
             MIS PROYECTOS
           </h2>
@@ -335,7 +335,7 @@ export default function Home() {
         <Experience />
 
         {/* Testimonios */}
-        <section id="testimonios" className="mx-auto max-w-6xl px-6 pb-20">
+        <section id="testimonios" className="mx-auto max-w-6xl px-6 pb-20 mt-16 md:mt-24">
           <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-slate-200">
             Testimonios
           </h2>

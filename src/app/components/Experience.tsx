@@ -10,7 +10,7 @@ export default function Experience() {
   const pillInactive = "bg-[#0f172a] text-white hover:bg-[#111827]";
 
   return (
-    <section id="experiencia" className="pt-16">
+    <section id="experiencia" className="pt-16 mt-16 md:mt-24">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-center text-4xl font-bold text-white">EXPERIENCIA</h2>
         <div className="w-16 h-[3px] bg-cyan-400 mx-auto mt-2 mb-6"></div>
