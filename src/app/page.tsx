@@ -92,9 +92,9 @@ export default function Home() {
           </h2>
           <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
 
-          <div className="mt-10 grid md:grid-cols-2 gap-10">
+          <div className="mt-10 grid md:grid-cols-2 gap-10 items-center">
             {/* Descripción izquierda */}
-            <div>
+            <div className="md:mt-16 lg:mt-20">
               <p className="text-slate-200">
                 Soy un desarrollador web apasionado por la tecnología y la
                 creación de soluciones digitales innovadoras. Me caracterizo por
