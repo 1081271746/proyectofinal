@@ -277,24 +277,24 @@ export default function Home() {
               </div>
             </article>
 
-            {/* Proyecto 5: Barbería (Agenda de citas) */}
+            {/* Proyecto 5: Inventario para biblioteca digital */}
             <article className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6">
               <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">✂️</div>
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">📚</div>
                 <div>
-                  <h3 className="font-semibold text-slate-200">Agenda de Citas para Barbería</h3>
+                  <h3 className="font-semibold text-slate-200">Inventario con base de datos para Gestor de Biblioteca Digital</h3>
                   <p className="mt-2 text-sm text-slate-300">
-                    Sistema de agenda orientado a la gestión de citas, recordatorios y administración de barberos y servicios.
+                    Sistema de inventario para una biblioteca digital: registro y catálogo de libros, búsqueda avanzada, control de préstamos y gestión de usuarios.
                   </p>
                 </div>
               </div>
               <div className="mt-4">
                 <h4 className="text-sm font-semibold text-slate-200">Características principales:</h4>
                 <ul className="mt-2 space-y-1 text-sm text-slate-300">
-                  <li>• Agenda semanal y vista de calendario</li>
-                  <li>• Recordatorios por correo</li>
-                  <li>• Panel de administración</li>
-                  <li>• Historial de clientes</li>
+                  <li>• Registro y catálogo de libros</li>
+                  <li>• Búsqueda y filtrado avanzado</li>
+                  <li>• Gestión de préstamos y devoluciones</li>
+                  <li>• Administración de usuarios y roles</li>
                 </ul>
               </div>
               <div className="mt-5 flex flex-wrap gap-2">
