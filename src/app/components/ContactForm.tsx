@@ -29,11 +29,11 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="rounded-lg border border-cyan-500/60 dark:bg-[#0b1220] bg-white p-6" onSubmit={(e) => e.preventDefault()}>
-      <h3 className="text-lg font-semibold dark:text-slate-200 text-slate-800">ENVÍAME UN MENSAJE</h3>
+    <form className="rounded-lg border border-cyan-500/60 bg-[var(--background)] p-6" onSubmit={(e) => e.preventDefault()}>
+      <h3 className="text-lg font-semibold text-[var(--foreground)]">ENVÍAME UN MENSAJE</h3>
       <div className="mt-6 grid md:grid-cols-2 gap-4">
         <div>
-          <label className="text-sm dark:text-slate-200 text-slate-800">Nombre</label>
+          <label className="text-sm text-[var(--foreground)]">Nombre</label>
           <input
             type="text"
             placeholder="Tu nombre"
@@ -43,7 +43,7 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label className="text-sm dark:text-slate-200 text-slate-800">Email</label>
+          <label className="text-sm text-[var(--foreground)]">Email</label>
           <input
             type="email"
             placeholder="tu@email.com"
@@ -54,7 +54,7 @@ export default function ContactForm() {
         </div>
       </div>
       <div className="mt-4">
-        <label className="text-sm dark:text-slate-200 text-slate-800">Asunto</label>
+        <label className="text-sm text-[var(--foreground)]">Asunto</label>
         <input
           type="text"
           placeholder="Asunto del mensaje"
@@ -64,7 +64,7 @@ export default function ContactForm() {
         />
       </div>
       <div className="mt-4">
-        <label className="text-sm dark:text-slate-200 text-slate-800">Mensaje</label>
+        <label className="text-sm text-[var(--foreground)]">Mensaje</label>
         <textarea
           placeholder="Cuéntame sobre tu proyecto..."
           rows={4}
@@ -95,7 +95,7 @@ export default function ContactForm() {
         </button>
       </div>
       {info && (
-        <p className="mt-3 text-xs dark:text-slate-200 text-slate-700" aria-live="polite">{info}</p>
+        <p className="mt-3 text-xs text-[var(--foreground)]" aria-live="polite">{info}</p>
       )}
     </form>
   );
