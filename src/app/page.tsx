@@ -12,7 +12,7 @@ export default function Home() {
       {/* Marco exterior similar a la imagen */}
       <div className="mx-4 my-4 rounded-md border border-cyan-500/60">
         {/* Navegación superior */}
-        <header className="sticky top-0 z-10 bg-white/80 dark:bg-[#0b1220]/80 backdrop-blur">
+        <header className="sticky top-0 z-10 bg-transparent">
           <nav className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
             <a href="#inicio" className="text-cyan-400 font-bold tracking-wide">
               SEBASTIAN
@@ -92,7 +92,7 @@ export default function Home() {
 
         {/* Acerca de mí */}
         <section id="acerca" className="mx-auto max-w-6xl px-6 pb-16 mt-16 md:mt-24">
-          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide dark:text-slate-200 text-slate-800">
+          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-[var(--foreground)]">
             ACERCA DE MÍ
           </h2>
           <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
@@ -100,13 +100,13 @@ export default function Home() {
           <div className="mt-10 grid md:grid-cols-2 gap-10 items-center">
             {/* Descripción izquierda */}
             <div className="md:mt-16 lg:mt-20">
-              <p className="dark:text-slate-200 text-slate-800">
+              <p className="text-[var(--foreground)]">
                 Soy un desarrollador web apasionado por la tecnología y la
                 creación de soluciones digitales innovadoras. Me caracterizo por
                 ser una persona dedicada, creativa y siempre en busca de nuevos
                 desafíos.
               </p>
-              <p className="mt-6 dark:text-slate-200 text-slate-800">
+              <p className="mt-6 text-[var(--foreground)]">
                 Además de la programación, tengo otras pasiones que me definen
                 como persona y me ayudan a mantener un equilibrio en mi vida
                 profesional y personal.
@@ -165,11 +165,11 @@ export default function Home() {
 
         {/* Proyectos */}
         <section id="proyectos" className="mx-auto max-w-6xl px-6 pb-20 mt-16 md:mt-24">
-          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide dark:text-slate-200 text-slate-800">
+          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-[var(--foreground)]">
             MIS PROYECTOS
           </h2>
           <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
-          <p className="mt-6 text-center dark:text-slate-200 text-slate-800 max-w-3xl mx-auto">
+          <p className="mt-6 text-center text-[var(--foreground)] max-w-3xl mx-auto">
             Aquí puedes ver algunos de los proyectos que he desarrollado, desde páginas web corporativas hasta aplicaciones web funcionales.
           </p>
 
@@ -343,11 +343,11 @@ export default function Home() {
 
         {/* Testimonios */}
         <section id="testimonios" className="mx-auto max-w-6xl px-6 pb-20 mt-16 md:mt-24">
-          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide dark:text-slate-200 text-slate-800">
+          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-[var(--foreground)]">
             Testimonios
           </h2>
           <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
-          <p className="mt-6 text-center dark:text-slate-300 text-slate-700 max-w-3xl mx-auto">
+          <p className="mt-6 text-center text-[var(--foreground)] max-w-3xl mx-auto">
             Lo que dicen las personas que han trabajado conmigo sobre mi trabajo y
             profesionalismo.
           </p>
@@ -418,11 +418,11 @@ export default function Home() {
 
         {/* Contacto */}
         <section id="contacto" className="mx-auto max-w-6xl px-6 pb-20 mt-16 md:mt-24">
-          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-slate-200">
+          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-[var(--foreground)]">
             CONTACTO
           </h2>
           <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
-          <p className="mt-6 text-center text-slate-200 max-w-3xl mx-auto">
+          <p className="mt-6 text-center text-[var(--foreground)] max-w-3xl mx-auto">
             ¿Tienes un proyecto en mente? Me encantaría escuchar de ti y discutir cómo puedo ayudarte.
           </p>
 
