@@ -66,7 +66,7 @@ export default function Home() {
             </div>
 
             {/* Columna derecha: tarjeta de perfil */}
-            <aside className="mx-auto w-full max-w-sm rounded-lg border border-cyan-500/60 bg-[#0b1220] p-5">
+            <aside className="mx-auto w-full max-w-sm rounded-lg border border-cyan-500/60 bg-[var(--background)] p-5">
               <div className="flex flex-col items-center text-center">
                 <div className="relative h-28 w-28 rounded-full ring-2 ring-cyan-500/70 p-1 mb-3">
                   <div className="rounded-full overflow-hidden">
@@ -79,9 +79,9 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold">Sebastian Rojas</h3>
+                <h3 className="text-lg font-semibold text-[var(--foreground)]">Sebastian Rojas</h3>
                 <p className="text-cyan-400 text-sm">Desarrollador Web</p>
-                <div className="mt-3 space-y-1 text-xs text-slate-300">
+                <div className="mt-3 space-y-1 text-xs text-[var(--foreground)]">
                   <p>✉ sebtiarrojas06@gmail.com</p>
                   <p>☎ 3164485328</p>
                 </div>
@@ -428,54 +428,54 @@ export default function Home() {
 
           <div className="mt-10 grid md:grid-cols-2 gap-8">
             {/* Información de contacto */}
-            <article className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6">
-              <h3 className="text-lg font-semibold text-slate-200">INFORMACIÓN DE CONTACTO</h3>
+            <article className="rounded-lg border border-cyan-500/60 bg-[var(--background)] p-6">
+              <h3 className="text-lg font-semibold text-[var(--foreground)]">INFORMACIÓN DE CONTACTO</h3>
               <div className="mt-6 space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400">✉</div>
                   <div>
-                    <p className="text-sm text-slate-400">Email</p>
-                    <p className="text-sm text-slate-200">sebtiarrojas06@gmail.com</p>
+                    <p className="text-sm text-[var(--foreground)]">Email</p>
+                    <p className="text-sm text-[var(--foreground)]">sebtiarrojas06@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400">📞</div>
                   <div>
-                    <p className="text-sm text-slate-400">Teléfono</p>
-                    <p className="text-sm text-slate-200">3164485328</p>
+                    <p className="text-sm text-[var(--foreground)]">Teléfono</p>
+                    <p className="text-sm text-[var(--foreground)]">3164485328</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400">📍</div>
                   <div>
-                    <p className="text-sm text-slate-400">Ubicación</p>
-                    <p className="text-sm text-slate-200">Colombia</p>
+                    <p className="text-sm text-[var(--foreground)]">Ubicación</p>
+                    <p className="text-sm text-[var(--foreground)]">Colombia</p>
                   </div>
                 </div>
               </div>
               <div className="mt-6">
-                <p className="text-sm text-slate-200">Sígueme en:</p>
+                <p className="text-sm text-[var(--foreground)]">Sígueme en:</p>
                 <div className="mt-3 flex items-center gap-3">
                   <a
                     href="https://github.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub"
-                  className="h-9 w-9 flex items-center justify-center rounded-md bg-[#0f172a] border border-cyan-500/60 text-slate-200 hover:text-cyan-400"
+                  className="h-9 w-9 flex items-center justify-center rounded-md bg-[var(--background)] border border-cyan-500/60 text-[var(--foreground)] hover:text-cyan-400"
                   >🐙</a>
                   <a
                     href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                  className="h-9 w-9 flex items-center justify-center rounded-md bg-[#0f172a] border border-cyan-500/60 text-slate-200 hover:text-cyan-400"
+                  className="h-9 w-9 flex items-center justify-center rounded-md bg-[var(--background)] border border-cyan-500/60 text-[var(--foreground)] hover:text-cyan-400"
                   >in</a>
                   <a
                     href="https://www.instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
-                  className="h-9 w-9 flex items-center justify-center rounded-md bg-[#0f172a] border border-cyan-500/60 text-slate-200 hover:text-cyan-400"
+                  className="h-9 w-9 flex items-center justify-center rounded-md bg-[var(--background)] border border-cyan-500/60 text-[var(--foreground)] hover:text-cyan-400"
                   >📷</a>
                 </div>
               </div>
