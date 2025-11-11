@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  /* Paleta unificada oscuro */
+  /* Paleta por defecto (modo claro) */
+  --background: #f8fafc; /* tono claro cercano a blanco */
+  --foreground: #1e293b; /* texto oscuro (equiv. slate-800) */
+}
+
+html.dark {
+  /* Paleta modo oscuro (igual a la interfaz original) */
   --background: #0b1220; /* azul oscuro base */
   --foreground: #e2e8f0; /* texto claro (equiv. slate-200) */
 }
@@ -12,9 +18,6 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
-/* Mantener el mismo esquema en todos los dispositivos */
-/* (el modo oscuro es el estilo principal del portafolio) */
 
 body {
   background: var(--background);

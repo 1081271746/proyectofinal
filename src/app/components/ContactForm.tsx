@@ -29,48 +29,48 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="rounded-lg border border-cyan-500/60 bg-[#0b1220] p-6" onSubmit={(e) => e.preventDefault()}>
-      <h3 className="text-lg font-semibold text-slate-200">ENVÍAME UN MENSAJE</h3>
+    <form className="rounded-lg border border-cyan-500/60 dark:bg-[#0b1220] bg-white p-6" onSubmit={(e) => e.preventDefault()}>
+      <h3 className="text-lg font-semibold dark:text-slate-200 text-slate-800">ENVÍAME UN MENSAJE</h3>
       <div className="mt-6 grid md:grid-cols-2 gap-4">
         <div>
-          <label className="text-sm text-slate-200">Nombre</label>
+          <label className="text-sm dark:text-slate-200 text-slate-800">Nombre</label>
           <input
             type="text"
             placeholder="Tu nombre"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="mt-1 w-full rounded-md border border-slate-700 bg-[#0f172a] px-3 py-2 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+            className="mt-1 w-full rounded-md border dark:border-slate-700 border-slate-300 dark:bg-[#0f172a] bg-white px-3 py-2 text-sm dark:text-slate-200 text-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           />
         </div>
         <div>
-          <label className="text-sm text-slate-200">Email</label>
+          <label className="text-sm dark:text-slate-200 text-slate-800">Email</label>
           <input
             type="email"
             placeholder="tu@email.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="mt-1 w-full rounded-md border border-slate-700 bg-[#0f172a] px-3 py-2 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+            className="mt-1 w-full rounded-md border dark:border-slate-700 border-slate-300 dark:bg-[#0f172a] bg-white px-3 py-2 text-sm dark:text-slate-200 text-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           />
         </div>
       </div>
       <div className="mt-4">
-        <label className="text-sm text-slate-200">Asunto</label>
+        <label className="text-sm dark:text-slate-200 text-slate-800">Asunto</label>
         <input
           type="text"
           placeholder="Asunto del mensaje"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
-          className="mt-1 w-full rounded-md border border-slate-700 bg-[#0f172a] px-3 py-2 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+          className="mt-1 w-full rounded-md border dark:border-slate-700 border-slate-300 dark:bg-[#0f172a] bg-white px-3 py-2 text-sm dark:text-slate-200 text-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-500"
         />
       </div>
       <div className="mt-4">
-        <label className="text-sm text-slate-200">Mensaje</label>
+        <label className="text-sm dark:text-slate-200 text-slate-800">Mensaje</label>
         <textarea
           placeholder="Cuéntame sobre tu proyecto..."
           rows={4}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="mt-1 w-full rounded-md border border-slate-700 bg-[#0f172a] px-3 py-2 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+          className="mt-1 w-full rounded-md border dark:border-slate-700 border-slate-300 dark:bg-[#0f172a] bg-white px-3 py-2 text-sm dark:text-slate-200 text-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-500"
         ></textarea>
       </div>
       <div className="mt-6 flex gap-3">
@@ -89,13 +89,13 @@ export default function ContactForm() {
               setInfo("Email copiado: sebtiarrojas06@gmail.com");
             } catch {}
           }}
-          className="inline-flex items-center gap-2 rounded-md border border-cyan-500/60 bg-[#0f172a] px-4 py-2 text-sm text-slate-200 hover:bg-slate-700"
+          className="inline-flex items-center gap-2 rounded-md border border-cyan-500/60 dark:bg-[#0f172a] bg-white px-4 py-2 text-sm dark:text-slate-200 text-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700"
         >
           📋 Copiar email
         </button>
       </div>
       {info && (
-        <p className="mt-3 text-xs text-slate-200" aria-live="polite">{info}</p>
+        <p className="mt-3 text-xs dark:text-slate-200 text-slate-700" aria-live="polite">{info}</p>
       )}
     </form>
   );
