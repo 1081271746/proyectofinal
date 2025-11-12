@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
+import { useI18n } from "../i18n/I18nProvider";
 
 export default function ContactForm() {
+  const { t } = useI18n();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -9,44 +11,44 @@ export default function ContactForm() {
   const [info, setInfo] = useState<string | null>(null);
 
   const handleSend = async () => {
-    const body = `Nombre: ${name}\nEmail: ${email}\n\n${message}`;
+    const body = `${t("form.name")}: ${name}\n${t("form.email")}: ${email}\n\n${message}`;
     const mailto = `mailto:sebtiarrojas06@gmail.com?subject=${encodeURIComponent(
       subject || "Contacto Portafolio"
     )}&body=${encodeURIComponent(body)}`;
     try {
       // Intento abrir el cliente de correo
       window.location.href = mailto;
-      setInfo("Abriendo tu cliente de correo…");
+      setInfo(t("form.open_mail"));
     } catch {
       // Fallback: copiar el correo al portapapeles
       try {
         await navigator.clipboard.writeText("sebtiarrojas06@gmail.com");
-        setInfo("No se pudo abrir el correo aquí. Copié el email al portapapeles.");
+        setInfo(t("form.copy_fallback"));
       } catch {
-        setInfo("No se pudo abrir el cliente ni copiar el email. Usa: sebtiarrojas06@gmail.com");
+        setInfo(t("form.copy_error"));
       }
     }
   };
 
   return (
     <form className="rounded-lg border border-cyan-500/60 bg-[var(--background)] p-6" onSubmit={(e) => e.preventDefault()}>
-      <h3 className="text-lg font-semibold text-[var(--foreground)]">ENVÍAME UN MENSAJE</h3>
+      <h3 className="text-lg font-semibold text-[var(--foreground)]">{t("form.send")}</h3>
       <div className="mt-6 grid md:grid-cols-2 gap-4">
         <div>
-          <label className="text-sm text-[var(--foreground)]">Nombre</label>
+          <label className="text-sm text-[var(--foreground)]">{t("form.name")}</label>
           <input
             type="text"
-            placeholder="Tu nombre"
+            placeholder={t("form.name.ph")}
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="mt-1 w-full rounded-md border dark:border-slate-700 border-slate-300 dark:bg-[#0f172a] bg-white px-3 py-2 text-sm dark:text-slate-200 text-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-500"
           />
         </div>
         <div>
-          <label className="text-sm text-[var(--foreground)]">Email</label>
+          <label className="text-sm text-[var(--foreground)]">{t("form.email")}</label>
           <input
             type="email"
-            placeholder="tu@email.com"
+            placeholder={t("form.email.ph")}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="mt-1 w-full rounded-md border dark:border-slate-700 border-slate-300 dark:bg-[#0f172a] bg-white px-3 py-2 text-sm dark:text-slate-200 text-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-500"
@@ -54,19 +56,19 @@ export default function ContactForm() {
         </div>
       </div>
       <div className="mt-4">
-        <label className="text-sm text-[var(--foreground)]">Asunto</label>
+        <label className="text-sm text-[var(--foreground)]">{t("form.subject")}</label>
         <input
           type="text"
-          placeholder="Asunto del mensaje"
+          placeholder={t("form.subject.ph")}
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
           className="mt-1 w-full rounded-md border dark:border-slate-700 border-slate-300 dark:bg-[#0f172a] bg-white px-3 py-2 text-sm dark:text-slate-200 text-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-500"
         />
       </div>
       <div className="mt-4">
-        <label className="text-sm text-[var(--foreground)]">Mensaje</label>
+        <label className="text-sm text-[var(--foreground)]">{t("form.message")}</label>
         <textarea
-          placeholder="Cuéntame sobre tu proyecto..."
+          placeholder={t("form.message.ph")}
           rows={4}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
@@ -79,19 +81,19 @@ export default function ContactForm() {
           onClick={handleSend}
           className="inline-flex items-center gap-2 rounded-md bg-cyan-500 px-4 py-2 text-sm font-semibold text-black hover:bg-cyan-400"
         >
-          <span>🚀</span> ENVIAR MENSAJE
+          <span>🚀</span> {t("form.send")}
         </button>
         <button
           type="button"
           onClick={async () => {
             try {
               await navigator.clipboard.writeText("sebtiarrojas06@gmail.com");
-              setInfo("Email copiado: sebtiarrojas06@gmail.com");
+              setInfo(t("form.copy_ok"));
             } catch {}
           }}
           className="inline-flex items-center gap-2 rounded-md border border-cyan-500/60 dark:bg-[#0f172a] bg-white px-4 py-2 text-sm dark:text-slate-200 text-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700"
         >
-          📋 Copiar email
+          📋 {t("form.copy")}
         </button>
       </div>
       {info && (

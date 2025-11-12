@@ -1,12 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 
 import Image from "next/image";
 import Experience from "./components/Experience";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import ThemeToggle from "./components/ThemeToggle";
+import LanguageToggle from "./components/LanguageToggle";
+import { useI18n } from "./i18n/I18nProvider";
 
 export default function Home() {
+  const { t } = useI18n();
   return (
     <main className="min-h-screen">
       {/* Marco exterior similar a la imagen */}
@@ -15,18 +19,19 @@ export default function Home() {
         <header className="sticky top-0 z-10 bg-transparent">
           <nav className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
             <a href="#inicio" className="text-cyan-400 font-bold tracking-wide">
-              SEBASTIAN
+              {t("brand.name")}
             </a>
-            <ul className="hidden md:flex gap-6 text-sm text-slate-300">
-              <li><a className="hover:text-cyan-400" href="#inicio">Inicio</a></li>
-              <li><a className="hover:text-cyan-400" href="#acerca">Acerca de mí</a></li>
-              <li><a className="hover:text-cyan-400" href="#proyectos">Proyectos</a></li>
-              <li><a className="hover:text-cyan-400" href="#experiencia">Experiencia</a></li>
-              <li><a className="hover:text-cyan-400" href="#testimonios">Testimonios</a></li>
-              <li><a className="hover:text-cyan-400" href="#contacto">Contacto</a></li>
+            <ul className="hidden md:flex gap-6 text-sm text-[var(--foreground)]">
+              <li><a className="hover:text-cyan-400" href="#inicio">{t("nav.home")}</a></li>
+              <li><a className="hover:text-cyan-400" href="#acerca">{t("nav.about")}</a></li>
+              <li><a className="hover:text-cyan-400" href="#proyectos">{t("nav.projects")}</a></li>
+              <li><a className="hover:text-cyan-400" href="#experiencia">{t("nav.experience")}</a></li>
+              <li><a className="hover:text-cyan-400" href="#testimonios">{t("nav.testimonials")}</a></li>
+              <li><a className="hover:text-cyan-400" href="#contacto">{t("nav.contact")}</a></li>
             </ul>
-            {/* Toggle de tema */}
-            <div className="md:ml-4">
+            {/* Controles */}
+            <div className="flex items-center gap-2 md:ml-4">
+              <LanguageToggle />
               <ThemeToggle />
             </div>
           </nav>
@@ -37,16 +42,14 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-10 items-center">
             {/* Columna izquierda: texto principal */}
             <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-slate-300">Web Developer</p>
+              <p className="text-xs uppercase tracking-[0.25em] text-slate-300">{t("hero.role")}</p>
               <h1 className="mt-3 text-4xl md:text-5xl font-extrabold leading-tight">
-                <span className="text-slate-200">SOY </span>
-                <span className="text-cyan-400">SEBASTIAN</span>
+                <span className="text-[var(--foreground)]">{t("hero.i_am")} </span>
+                <span className="text-cyan-400">{t("brand.name")}</span>
                 <br />
-                <span className="text-slate-200">ROJAS</span>
+                <span className="text-[var(--foreground)]">{t("hero.last_name")}</span>
               </h1>
-              <p className="mt-4 max-w-xl text-slate-300">
-                Desarrollador web apasionado por crear experiencias digitales excepcionales.
-              </p>
+              <p className="mt-4 max-w-xl text-slate-300">{t("hero.subtitle")}</p>
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <button
@@ -54,13 +57,13 @@ export default function Home() {
                   disabled
                   className="inline-flex items-center gap-2 rounded-md border border-cyan-500/60 bg-slate-900 px-4 py-2 text-sm text-slate-200 shadow cursor-not-allowed"
                 >
-                  Descargar CV
+                  {t("hero.cv")}
                 </button>
                 <a
                   href="mailto:sebtiarrojas06@gmail.com?subject=Contacto%20Portafolio"
                   className="inline-flex items-center gap-2 rounded-md bg-cyan-500/80 px-4 py-2 text-sm font-medium text-slate-900 hover:bg-cyan-400"
                 >
-                  Contactarme
+                  {t("hero.contact")}
                 </a>
               </div>
             </div>
@@ -80,7 +83,7 @@ export default function Home() {
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold text-[var(--foreground)]">Sebastian Rojas</h3>
-                <p className="text-cyan-400 text-sm">Desarrollador Web</p>
+                <p className="text-cyan-400 text-sm">{t("hero.role")}</p>
                 <div className="mt-3 space-y-1 text-xs text-[var(--foreground)]">
                   <p>✉ sebtiarrojas06@gmail.com</p>
                   <p>☎ 3164485328</p>
@@ -92,25 +95,14 @@ export default function Home() {
 
         {/* Acerca de mí */}
         <section id="acerca" className="mx-auto max-w-6xl px-6 pb-16 mt-16 md:mt-24">
-          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-[var(--foreground)]">
-            ACERCA DE MÍ
-          </h2>
+          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-[var(--foreground)]">{t("about.title")}</h2>
           <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
 
           <div className="mt-10 grid md:grid-cols-2 gap-10 items-center">
             {/* Descripción izquierda */}
             <div className="md:mt-16 lg:mt-20">
-              <p className="text-[var(--foreground)]">
-                Soy un desarrollador web apasionado por la tecnología y la
-                creación de soluciones digitales innovadoras. Me caracterizo por
-                ser una persona dedicada, creativa y siempre en busca de nuevos
-                desafíos.
-              </p>
-              <p className="mt-6 text-[var(--foreground)]">
-                Además de la programación, tengo otras pasiones que me definen
-                como persona y me ayudan a mantener un equilibrio en mi vida
-                profesional y personal.
-              </p>
+              <p className="text-[var(--foreground)]">{t("about.p1")}</p>
+              <p className="mt-6 text-[var(--foreground)]">{t("about.p2")}</p>
             </div>
 
             {/* Tarjetas de intereses */}
@@ -150,12 +142,8 @@ export default function Home() {
                 <div className="flex items-start gap-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400 text-xl">🕷️</div>
                   <div>
-                    <h3 className="font-semibold text-[var(--foreground)]">Fan de Spider-Man</h3>
-                    <p className="mt-1 text-sm text-[var(--foreground)]">
-                      Me encanta la filosofía de &quot;un gran poder conlleva una
-                      gran responsabilidad&quot; y disfruto sus películas, cómics y
-                      videojuegos.
-                    </p>
+                    <h3 className="font-semibold text-[var(--foreground)]">{t("about.card.spiderman.title")}</h3>
+                    <p className="mt-1 text-sm text-[var(--foreground)]">{t("about.card.spiderman.text")}</p>
                   </div>
                 </div>
               </div>
@@ -165,13 +153,9 @@ export default function Home() {
 
         {/* Proyectos */}
         <section id="proyectos" className="mx-auto max-w-6xl px-6 pb-20 mt-16 md:mt-24">
-          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-[var(--foreground)]">
-            MIS PROYECTOS
-          </h2>
+          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-[var(--foreground)]">{t("projects.title")}</h2>
           <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
-          <p className="mt-6 text-center text-[var(--foreground)] max-w-3xl mx-auto">
-            Aquí puedes ver algunos de los proyectos que he desarrollado, desde páginas web corporativas hasta aplicaciones web funcionales.
-          </p>
+          <p className="mt-6 text-center text-[var(--foreground)] max-w-3xl mx-auto">{t("projects.intro")}</p>
 
           <div className="mt-10 grid md:grid-cols-2 gap-8">
             {/* Proyecto 1 */}
@@ -186,7 +170,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-4">
-                <h4 className="text-sm font-semibold text-[var(--foreground)]">Características principales:</h4>
+                <h4 className="text-sm font-semibold text-[var(--foreground)]">{t("projects.features")}</h4>
                 <ul className="mt-2 space-y-1 text-sm text-[var(--foreground)]">
                   <li>• Diseño responsive</li>
                   <li>• Catálogo de productos</li>
@@ -213,7 +197,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-4">
-                <h4 className="text-sm font-semibold text-[var(--foreground)]">Características principales:</h4>
+                <h4 className="text-sm font-semibold text-[var(--foreground)]">{t("projects.features")}</h4>
                 <ul className="mt-2 space-y-1 text-sm text-[var(--foreground)]">
                   <li>• Sistema de reservas</li>
                   <li>• Calendario interactivo</li>
@@ -343,9 +327,7 @@ export default function Home() {
 
         {/* Testimonios */}
         <section id="testimonios" className="mx-auto max-w-6xl px-6 pb-20 mt-16 md:mt-24">
-          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-[var(--foreground)]">
-            Testimonios
-          </h2>
+          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-[var(--foreground)]">{t("testimonials.title")}</h2>
           <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
           <p className="mt-6 text-center text-[var(--foreground)] max-w-3xl mx-auto">
             Lo que dicen las personas que han trabajado conmigo sobre mi trabajo y
@@ -418,43 +400,39 @@ export default function Home() {
 
         {/* Contacto */}
         <section id="contacto" className="mx-auto max-w-6xl px-6 pb-20 mt-16 md:mt-24">
-          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-[var(--foreground)]">
-            CONTACTO
-          </h2>
+          <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-[var(--foreground)]">{t("contact.title")}</h2>
           <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
-          <p className="mt-6 text-center text-[var(--foreground)] max-w-3xl mx-auto">
-            ¿Tienes un proyecto en mente? Me encantaría escuchar de ti y discutir cómo puedo ayudarte.
-          </p>
+          <p className="mt-6 text-center text-[var(--foreground)] max-w-3xl mx-auto">{t("contact.intro")}</p>
 
           <div className="mt-10 grid md:grid-cols-2 gap-8">
             {/* Información de contacto */}
             <article className="rounded-lg border border-cyan-500/60 bg-[var(--background)] p-6">
-              <h3 className="text-lg font-semibold text-[var(--foreground)]">INFORMACIÓN DE CONTACTO</h3>
+              <h3 className="text-lg font-semibold text-[var(--foreground)]">{t("contact.info.title")}</h3>
               <div className="mt-6 space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400">✉</div>
                   <div>
-                    <p className="text-sm text-[var(--foreground)]">Email</p>
+                    <p className="text-sm text-[var(--foreground)]">{t("contact.info.email")}</p>
                     <p className="text-sm text-[var(--foreground)]">sebtiarrojas06@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400">📞</div>
                   <div>
-                    <p className="text-sm text-[var(--foreground)]">Teléfono</p>
+                    <p className="text-sm text-[var(--foreground)]">{t("contact.info.phone")}</p>
                     <p className="text-sm text-[var(--foreground)]">3164485328</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400">📍</div>
                   <div>
-                    <p className="text-sm text-[var(--foreground)]">Ubicación</p>
-                    <p className="text-sm text-[var(--foreground)]">Colombia</p>
+                    <p className="text-sm text-[var(--foreground)]">{t("contact.info.location")}</p>
+                    <p className="text-sm text-[var(--foreground)]">{t("contact.info.country")}</p>
                   </div>
                 </div>
               </div>
               <div className="mt-6">
-                <p className="text-sm text-[var(--foreground)]">Sígueme en:</p>
+                <p className="text-sm text-[var(--foreground)]">{t("contact.follow")}</p>
                 <div className="mt-3 flex items-center gap-3">
                   <a
                     href="https://github.com/"

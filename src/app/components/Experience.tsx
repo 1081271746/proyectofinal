@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
+import { useI18n } from "../i18n/I18nProvider";
 
 export default function Experience() {
+  const { t } = useI18n();
   const [tab, setTab] = useState<"academica" | "laboral">("academica");
 
   const pillBase =
@@ -12,12 +14,9 @@ export default function Experience() {
   return (
     <section id="experiencia" className="pt-16 mt-16 md:mt-24">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-center text-4xl font-bold text-[var(--foreground)]">EXPERIENCIA</h2>
+        <h2 className="text-center text-4xl font-bold text-[var(--foreground)]">{t("experience.title")}</h2>
         <div className="w-16 h-[3px] bg-cyan-400 mx-auto mt-2 mb-6"></div>
-        <p className="text-center text-[var(--foreground)] mb-8">
-          Mi trayectoria académica y profesional que me ha formado como persona y
-          profesional.
-        </p>
+        {/* Intro opcional */}
 
         {/* Tabs */}
         <div className="flex gap-4 max-w-md mx-auto mb-8">
@@ -27,7 +26,7 @@ export default function Experience() {
             className={`${pillBase} ${tab === "academica" ? pillActive : pillInactive}`}
             onClick={() => setTab("academica")}
           >
-            ACADÉMICA
+            {t("experience.tab.academic")}
           </button>
           <button
             type="button"
@@ -35,7 +34,7 @@ export default function Experience() {
             className={`${pillBase} ${tab === "laboral" ? pillActive : pillInactive}`}
             onClick={() => setTab("laboral")}
           >
-            LABORAL
+            {t("experience.tab.work")}
           </button>
         </div>
 
@@ -46,42 +45,33 @@ export default function Experience() {
             <div className="border border-cyan-400 rounded-xl p-6 bg-[var(--background)] text-[var(--foreground)] shadow-[0_0_10px_#22d3ee]">
               <div className="flex items-center gap-3 mb-2">
                 <span className="text-cyan-400 text-xl">🎓</span>
-                <h3 className="text-xl font-semibold">Ingeniería de Software — 5º semestre</h3>
+                <h3 className="text-xl font-semibold">{t("experience.academic.software")}</h3>
               </div>
-              <p className="text-cyan-300 mb-1">Universidad Cooperativa de Colombia</p>
-              <p className="mb-4 text-[var(--foreground)]">2025 - Presente</p>
-              <p className="text-[var(--foreground)]">
-                Actualmente cursando quinto semestre, fortaleciendo bases de programación,
-                estructuras de datos, arquitectura de software y buenas prácticas de desarrollo.
-              </p>
+              <p className="text-cyan-300 mb-1">{t("experience.academic.university")}</p>
+              <p className="mb-4 text-[var(--foreground)]">{t("experience.academic.dates")}</p>
+              <p className="text-[var(--foreground)]">{t("experience.academic.desc")}</p>
             </div>
 
             {/* Bachiller */}
             <div className="border border-cyan-400 rounded-xl p-6 bg-[var(--background)] text-[var(--foreground)] shadow-[0_0_10px_#22d3ee]">
               <div className="flex items-center gap-3 mb-2">
                 <span className="text-cyan-400 text-xl">📘</span>
-                <h3 className="text-xl font-semibold">Bachiller</h3>
+                <h3 className="text-xl font-semibold">{t("experience.academic.highschool")}</h3>
               </div>
-              <p className="text-cyan-300 mb-1">Colegio Felipense</p>
-              <p className="mb-4 text-[var(--foreground)]">2011 - 2022</p>
-              <p className="text-[var(--foreground)]">
-                Graduado con excelentes calificaciones, desarrollando habilidades de liderazgo y
-                trabajo en equipo.
-              </p>
+              <p className="text-cyan-300 mb-1">{t("experience.academic.hs.school")}</p>
+              <p className="mb-4 text-[var(--foreground)]">{t("experience.academic.hs.dates")}</p>
+              <p className="text-[var(--foreground)]">{t("experience.academic.hs.desc")}</p>
             </div>
 
             {/* Cursos de Inglés */}
             <div className="border border-cyan-400 rounded-xl p-6 bg-[var(--background)] text-[var(--foreground)] shadow-[0_0_10px_#22d3ee]">
               <div className="flex items-center gap-3 mb-2">
                 <span className="text-cyan-400 text-xl">🗣️</span>
-                <h3 className="text-xl font-semibold">Cursos de Inglés</h3>
+                <h3 className="text-xl font-semibold">{t("experience.academic.english")}</h3>
               </div>
-              <p className="text-cyan-300 mb-1">Varios Institutos</p>
-              <p className="mb-4 text-[var(--foreground)]">2020 - 2023</p>
-              <p className="text-[var(--foreground)]">
-                Múltiples cursos de inglés para mejorar las habilidades comunicativas y acceso a
-                recursos técnicos internacionales.
-              </p>
+              <p className="text-cyan-300 mb-1">{t("experience.academic.english.school")}</p>
+              <p className="mb-4 text-[var(--foreground)]">{t("experience.academic.english.dates")}</p>
+              <p className="text-[var(--foreground)]">{t("experience.academic.english.desc")}</p>
             </div>
           </div>
         ) : (
@@ -90,20 +80,17 @@ export default function Experience() {
             <div className="border border-cyan-400 rounded-xl p-6 bg-[var(--background)] text-[var(--foreground)] shadow-[0_0_10px_#22d3ee]">
               <div className="flex items-center gap-3 mb-2">
                 <span className="text-cyan-400 text-xl">🛍️</span>
-                <h3 className="text-xl font-semibold">Asistente de Ventas</h3>
+                <h3 className="text-xl font-semibold">{t("experience.work.sales")}</h3>
               </div>
-              <p className="text-cyan-300 mb-1">Almacén de Ropa Familiar</p>
-              <p className="mb-4 text-[var(--foreground)]">2021 - Presente</p>
-              <p className="text-[var(--foreground)] mb-4">
-                Trabajo en el negocio familiar gestionando inventario, atención al cliente y apoyo
-                en las operaciones diarias del almacén de ropa.
-              </p>
-              <p className="text-[var(--foreground)] font-semibold mb-2">Responsabilidades principales:</p>
+              <p className="text-cyan-300 mb-1">{t("experience.work.sales.place")}</p>
+              <p className="mb-4 text-[var(--foreground)]">{t("experience.work.sales.dates")}</p>
+              <p className="text-[var(--foreground)] mb-4">{t("experience.work.sales.desc")}</p>
+              <p className="text-[var(--foreground)] font-semibold mb-2">{t("experience.work.sales.resp")}</p>
               <ul className="text-[var(--foreground)] space-y-2">
-                <li>• Atención personalizada al cliente</li>
-                <li>• Gestión de inventario</li>
-                <li>• Organización de mercancía</li>
-                <li>• Apoyo en estrategias de ventas</li>
+                <li>{t("experience.work.sales.r1")}</li>
+                <li>{t("experience.work.sales.r2")}</li>
+                <li>{t("experience.work.sales.r3")}</li>
+                <li>{t("experience.work.sales.r4")}</li>
               </ul>
             </div>
 
@@ -111,20 +98,17 @@ export default function Experience() {
             <div className="border border-cyan-400 rounded-xl p-6 bg-[var(--background)] text-[var(--foreground)] shadow-[0_0_10px_#22d3ee]">
               <div className="flex items-center gap-3 mb-2">
                 <span className="text-cyan-400 text-xl">💈</span>
-                <h3 className="text-xl font-semibold">Desarrollador Web — Sistema de Reservas para Barbería</h3>
+                <h3 className="text-xl font-semibold">{t("experience.work.dev")}</h3>
               </div>
-              <p className="text-cyan-300 mb-1">Barbería Local</p>
-              <p className="mb-4 text-[var(--foreground)]">2023</p>
-              <p className="text-[var(--foreground)] mb-4">
-                Implementación de una aplicación web para la reserva de turnos, con calendario
-                interactivo, gestión de clientes y visualización de disponibilidad.
-              </p>
-              <p className="text-[var(--foreground)] font-semibold mb-2">Aportes destacados:</p>
+              <p className="text-cyan-300 mb-1">{t("experience.work.dev.place")}</p>
+              <p className="mb-4 text-[var(--foreground)]">{t("experience.work.dev.dates")}</p>
+              <p className="text-[var(--foreground)] mb-4">{t("experience.work.dev.desc")}</p>
+              <p className="text-[var(--foreground)] font-semibold mb-2">{t("experience.work.dev.resp")}</p>
               <ul className="text-[var(--foreground)] space-y-2">
-                <li>• Sistema de reservas y calendario</li>
-                <li>• Gestión de clientes y citas</li>
-                <li>• Interfaz responsive y accesible</li>
-                <li>• Notificaciones básicas para recordatorios</li>
+                <li>{t("experience.work.dev.r1")}</li>
+                <li>{t("experience.work.dev.r2")}</li>
+                <li>{t("experience.work.dev.r3")}</li>
+                <li>{t("experience.work.dev.r4")}</li>
               </ul>
             </div>
           </div>
