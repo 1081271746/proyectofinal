@@ -12,7 +12,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "nav.contact": "Contacto",
 
     // Hero
-    "hero.role": "Web Developer",
+    "hero.role": "Desarrollador de Software",
     "hero.i_am": "SOY",
     "hero.last_name": "ROJAS",
     "hero.subtitle": "Desarrollador web apasionado por crear experiencias digitales excepcionales.",
