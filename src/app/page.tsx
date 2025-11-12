@@ -60,7 +60,7 @@ export default function Home() {
                   {t("hero.cv")}
                 </button>
                 <a
-                  href="mailto:sebtiarrojas06@gmail.com?subject=Contacto%20Portafolio"
+                  href="mailto:sebitasroja06@gmail.com?subject=Contacto%20Portafolio"
                   className="inline-flex items-center gap-2 rounded-md bg-cyan-500/80 px-4 py-2 text-sm font-medium text-slate-900 hover:bg-cyan-400"
                 >
                   {t("hero.contact")}
@@ -85,7 +85,7 @@ export default function Home() {
                 <h3 className="text-lg font-semibold text-[var(--foreground)]">Sebastian Rojas</h3>
                 <p className="text-cyan-400 text-sm">{t("hero.role")}</p>
                 <div className="mt-3 space-y-1 text-xs text-[var(--foreground)]">
-                  <p>✉ sebtiarrojas06@gmail.com</p>
+                  <p>✉ sebitasroja06@gmail.com</p>
                   <p>☎ 3164485328</p>
                 </div>
               </div>
@@ -380,7 +380,7 @@ export default function Home() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400">✉</div>
                   <div>
                     <p className="text-sm text-[var(--foreground)]">{t("contact.info.email")}</p>
-                    <p className="text-sm text-[var(--foreground)]">sebtiarrojas06@gmail.com</p>
+                    <p className="text-sm text-[var(--foreground)]">sebitasroja06@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">

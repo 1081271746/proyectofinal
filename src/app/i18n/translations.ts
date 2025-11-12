@@ -141,9 +141,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "form.subject.ph": "Asunto del mensaje",
     "form.message.ph": "Cuéntame sobre tu proyecto...",
     "form.open_mail": "Abriendo tu cliente de correo…",
-    "form.copy_ok": "Email copiado: sebtiarrojas06@gmail.com",
+    "form.copy_ok": "Email copiado: sebitasroja06@gmail.com",
     "form.copy_fallback": "No se pudo abrir el correo aquí. Copié el email al portapapeles.",
-    "form.copy_error": "No se pudo abrir el cliente ni copiar el email. Usa: sebtiarrojas06@gmail.com",
+    "form.copy_error": "No se pudo abrir el cliente ni copiar el email. Usa: sebitasroja06@gmail.com",
 
     // Footer
     "footer.desc": "Desarrollador web apasionado por crear experiencias digitales excepcionales.",
@@ -289,9 +289,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "form.subject.ph": "Message subject",
     "form.message.ph": "Tell me about your project...",
     "form.open_mail": "Opening your mail client…",
-    "form.copy_ok": "Email copied: sebtiarrojas06@gmail.com",
+    "form.copy_ok": "Email copied: sebitasroja06@gmail.com",
     "form.copy_fallback": "Could not open mail here. I copied the email to clipboard.",
-    "form.copy_error": "Couldn’t open client or copy. Use: sebtiarrojas06@gmail.com",
+    "form.copy_error": "Couldn’t open client or copy. Use: sebitasroja06@gmail.com",
 
     "footer.desc": "Web developer passionate about creating exceptional digital experiences.",
     "footer.quick": "QUICK LINKS",

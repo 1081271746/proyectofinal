@@ -12,7 +12,7 @@ export default function ContactForm() {
 
   const handleSend = async () => {
     const body = `${t("form.name")}: ${name}\n${t("form.email")}: ${email}\n\n${message}`;
-    const mailto = `mailto:sebtiarrojas06@gmail.com?subject=${encodeURIComponent(
+    const mailto = `mailto:sebitasroja06@gmail.com?subject=${encodeURIComponent(
       subject || "Contacto Portafolio"
     )}&body=${encodeURIComponent(body)}`;
     try {
@@ -22,7 +22,7 @@ export default function ContactForm() {
     } catch {
       // Fallback: copiar el correo al portapapeles
       try {
-        await navigator.clipboard.writeText("sebtiarrojas06@gmail.com");
+        await navigator.clipboard.writeText("sebitasroja06@gmail.com");
         setInfo(t("form.copy_fallback"));
       } catch {
         setInfo(t("form.copy_error"));
@@ -87,7 +87,7 @@ export default function ContactForm() {
           type="button"
           onClick={async () => {
             try {
-              await navigator.clipboard.writeText("sebtiarrojas06@gmail.com");
+              await navigator.clipboard.writeText("sebitasroja06@gmail.com");
               setInfo(t("form.copy_ok"));
             } catch {}
           }}
