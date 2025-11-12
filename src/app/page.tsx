@@ -112,12 +112,8 @@ export default function Home() {
                 <div className="flex items-start gap-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400 text-xl">⚽</div>
                   <div>
-                    <h3 className="font-semibold text-[var(--foreground)]">Pasión por el Fútbol</h3>
-                    <p className="mt-1 text-sm text-[var(--foreground)]">
-                      El fútbol es una de mis grandes pasiones. Me ayuda a
-                      mantenerme activo, trabajar en equipo y desconectar del
-                      mundo digital.
-                    </p>
+                    <h3 className="font-semibold text-[var(--foreground)]">{t("about.card.football.title")}</h3>
+                    <p className="mt-1 text-sm text-[var(--foreground)]">{t("about.card.football.text")}</p>
                   </div>
                 </div>
               </div>
@@ -127,12 +123,8 @@ export default function Home() {
                 <div className="flex items-start gap-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400 text-xl">💼</div>
                   <div>
-                    <h3 className="font-semibold text-[var(--foreground)]">Emprendimiento</h3>
-                    <p className="mt-1 text-sm text-[var(--foreground)]">
-                      Tengo experiencia emprendiendo y gestionando proyectos,
-                      lo que me ha enseñado sobre negocios, liderazgo y
-                      responsabilidad.
-                    </p>
+                    <h3 className="font-semibold text-[var(--foreground)]">{t("about.card.business.title")}</h3>
+                    <p className="mt-1 text-sm text-[var(--foreground)]">{t("about.card.business.text")}</p>
                   </div>
                 </div>
               </div>
@@ -163,19 +155,17 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">🌐</div>
                 <div>
-                  <h3 className="font-semibold text-[var(--foreground)]">Página Web para Negocio Familiar</h3>
-                  <p className="mt-2 text-sm text-[var(--foreground)]">
-                    Desarrollo de una página web completa para el negocio de un familiar, incluyendo catálogo de productos, información de contacto y diseño responsive.
-                  </p>
+                  <h3 className="font-semibold text-[var(--foreground)]">{t("projects.p1.title")}</h3>
+                  <p className="mt-2 text-sm text-[var(--foreground)]">{t("projects.p1.desc")}</p>
                 </div>
               </div>
               <div className="mt-4">
                 <h4 className="text-sm font-semibold text-[var(--foreground)]">{t("projects.features")}</h4>
                 <ul className="mt-2 space-y-1 text-sm text-[var(--foreground)]">
-                  <li>• Diseño responsive</li>
-                  <li>• Catálogo de productos</li>
-                  <li>• Formulario de contacto</li>
-                  <li>• Optimización SEO</li>
+                  <li>• {t("projects.p1.f1")}</li>
+                  <li>• {t("projects.p1.f2")}</li>
+                  <li>• {t("projects.p1.f3")}</li>
+                  <li>• {t("projects.p1.f4")}</li>
                 </ul>
               </div>
               <div className="mt-5 flex flex-wrap gap-2">
@@ -190,19 +180,17 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">📅</div>
                 <div>
-                  <h3 className="font-semibold text-[var(--foreground)]">Sistema de Reservas para Barbería</h3>
-                  <p className="mt-2 text-sm text-[var(--foreground)]">
-                    Aplicación web para gestionar reservas de citas en una barbería, con sistema de calendario y notificaciones.
-                  </p>
+                  <h3 className="font-semibold text-[var(--foreground)]">{t("projects.p2.title")}</h3>
+                  <p className="mt-2 text-sm text-[var(--foreground)]">{t("projects.p2.desc")}</p>
                 </div>
               </div>
               <div className="mt-4">
                 <h4 className="text-sm font-semibold text-[var(--foreground)]">{t("projects.features")}</h4>
                 <ul className="mt-2 space-y-1 text-sm text-[var(--foreground)]">
-                  <li>• Sistema de reservas</li>
-                  <li>• Calendario interactivo</li>
-                  <li>• Gestión de clientes</li>
-                  <li>• Notificaciones automáticas</li>
+                  <li>• {t("projects.p2.f1")}</li>
+                  <li>• {t("projects.p2.f2")}</li>
+                  <li>• {t("projects.p2.f3")}</li>
+                  <li>• {t("projects.p2.f4")}</li>
                 </ul>
               </div>
               <div className="mt-5 flex flex-wrap gap-2">
@@ -217,19 +205,17 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">🚗</div>
                 <div>
-                  <h3 className="font-semibold text-[var(--foreground)]">Carro a Control Remoto (Arduino) — 3er semestre</h3>
-                  <p className="mt-2 text-sm text-[var(--foreground)]">
-                    Vehículo a control remoto construido con Arduino, orientado a aprender electrónica básica, programación de microcontroladores y control de motores.
-                  </p>
+                  <h3 className="font-semibold text-[var(--foreground)]">{t("projects.p3.title")}</h3>
+                  <p className="mt-2 text-sm text-[var(--foreground)]">{t("projects.p3.desc")}</p>
                 </div>
               </div>
               <div className="mt-4">
-                <h4 className="text-sm font-semibold text-[var(--foreground)]">Características principales:</h4>
+                <h4 className="text-sm font-semibold text-[var(--foreground)]">{t("projects.features")}</h4>
                 <ul className="mt-2 space-y-1 text-sm text-[var(--foreground)]">
-                  <li>• Control de dirección y velocidad</li>
-                  <li>• Comunicación inalámbrica (Bluetooth)</li>
-                  <li>• Integración de sensores para evitar obstáculos</li>
-                  <li>• Documentación y armado del circuito</li>
+                  <li>• {t("projects.p3.f1")}</li>
+                  <li>• {t("projects.p3.f2")}</li>
+                  <li>• {t("projects.p3.f3")}</li>
+                  <li>• {t("projects.p3.f4")}</li>
                 </ul>
               </div>
               <div className="mt-5 flex flex-wrap gap-2">
@@ -244,19 +230,17 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">🧠</div>
                 <div>
-                  <h3 className="font-semibold text-[var(--foreground)]">App de Juegos Cognitivos (Trabajo en equipo)</h3>
-                  <p className="mt-2 text-sm text-[var(--foreground)]">
-                    Aplicación enfocada en ejercicios de memoria, atención y lógica, con niveles, puntajes y seguimiento de progreso para usuarios.
-                  </p>
+                  <h3 className="font-semibold text-[var(--foreground)]">{t("projects.p4.title")}</h3>
+                  <p className="mt-2 text-sm text-[var(--foreground)]">{t("projects.p4.desc")}</p>
                 </div>
               </div>
               <div className="mt-4">
-                <h4 className="text-sm font-semibold text-[var(--foreground)]">Características principales:</h4>
+                <h4 className="text-sm font-semibold text-[var(--foreground)]">{t("projects.features")}</h4>
                 <ul className="mt-2 space-y-1 text-sm text-[var(--foreground)]">
-                  <li>• Múltiples minijuegos y niveles</li>
-                  <li>• Registro y estadísticas del usuario</li>
-                  <li>• UI accesible y adaptable</li>
-                  <li>• Trabajo colaborativo con control de versiones</li>
+                  <li>• {t("projects.p4.f1")}</li>
+                  <li>• {t("projects.p4.f2")}</li>
+                  <li>• {t("projects.p4.f3")}</li>
+                  <li>• {t("projects.p4.f4")}</li>
                 </ul>
               </div>
               <div className="mt-5 flex flex-wrap gap-2">
@@ -271,19 +255,17 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">📚</div>
                 <div>
-                  <h3 className="font-semibold text-[var(--foreground)]">Inventario con base de datos para Gestor de Biblioteca Digital</h3>
-                  <p className="mt-2 text-sm text-[var(--foreground)]">
-                    Sistema de inventario para una biblioteca digital: registro y catálogo de libros, búsqueda avanzada, control de préstamos y gestión de usuarios.
-                  </p>
+                  <h3 className="font-semibold text-[var(--foreground)]">{t("projects.p5.title")}</h3>
+                  <p className="mt-2 text-sm text-[var(--foreground)]">{t("projects.p5.desc")}</p>
                 </div>
               </div>
               <div className="mt-4">
-                <h4 className="text-sm font-semibold text-[var(--foreground)]">Características principales:</h4>
+                <h4 className="text-sm font-semibold text-[var(--foreground)]">{t("projects.features")}</h4>
                 <ul className="mt-2 space-y-1 text-sm text-[var(--foreground)]">
-                  <li>• Registro y catálogo de libros</li>
-                  <li>• Búsqueda y filtrado avanzado</li>
-                  <li>• Gestión de préstamos y devoluciones</li>
-                  <li>• Administración de usuarios y roles</li>
+                  <li>• {t("projects.p5.f1")}</li>
+                  <li>• {t("projects.p5.f2")}</li>
+                  <li>• {t("projects.p5.f3")}</li>
+                  <li>• {t("projects.p5.f4")}</li>
                 </ul>
               </div>
               <div className="mt-5 flex flex-wrap gap-2">
@@ -298,19 +280,17 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20 text-cyan-400 text-xl shadow-[0_0_20px_rgba(34,211,238,0.25)]">🍽️</div>
                 <div>
-                  <h3 className="font-semibold text-[var(--foreground)]">Página de Restaurante — Pedidos en línea</h3>
-                  <p className="mt-2 text-sm text-[var(--foreground)]">
-                    Sitio web con menú digital, carrito de pedidos y panel de gestión básica para administrar productos y órdenes.
-                  </p>
+                  <h3 className="font-semibold text-[var(--foreground)]">{t("projects.p6.title")}</h3>
+                  <p className="mt-2 text-sm text-[var(--foreground)]">{t("projects.p6.desc")}</p>
                 </div>
               </div>
               <div className="mt-4">
-                <h4 className="text-sm font-semibold text-[var(--foreground)]">Características principales:</h4>
+                <h4 className="text-sm font-semibold text-[var(--foreground)]">{t("projects.features")}</h4>
                 <ul className="mt-2 space-y-1 text-sm text-[var(--foreground)]">
-                  <li>• Menú dinámico y filtrado por categorías</li>
-                  <li>• Carrito de compras y resumen de pedido</li>
-                  <li>• Pasarela de pago simulada</li>
-                  <li>• Panel básico para gestión de platos</li>
+                  <li>• {t("projects.p6.f1")}</li>
+                  <li>• {t("projects.p6.f2")}</li>
+                  <li>• {t("projects.p6.f3")}</li>
+                  <li>• {t("projects.p6.f4")}</li>
                 </ul>
               </div>
               <div className="mt-5 flex flex-wrap gap-2">
@@ -329,10 +309,7 @@ export default function Home() {
         <section id="testimonios" className="mx-auto max-w-6xl px-6 pb-20 mt-16 md:mt-24">
           <h2 className="text-center text-3xl md:text-4xl font-bold tracking-wide text-[var(--foreground)]">{t("testimonials.title")}</h2>
           <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
-          <p className="mt-6 text-center text-[var(--foreground)] max-w-3xl mx-auto">
-            Lo que dicen las personas que han trabajado conmigo sobre mi trabajo y
-            profesionalismo.
-          </p>
+          <p className="mt-6 text-center text-[var(--foreground)] max-w-3xl mx-auto">{t("testimonials.intro")}</p>
 
           <div className="mt-10 grid md:grid-cols-3 gap-6">
             {/* Testimonio 1 */}
@@ -341,17 +318,13 @@ export default function Home() {
                 <div className="text-cyan-400 text-sm">★★★★★</div>
                 <div className="text-cyan-400 text-xl font-bold">”</div>
               </div>
-              <p className="mt-4 text-sm text-[var(--foreground)] italic">
-                "Sebastian es un excelente compañero de estudios y deportista. Su dedicación tanto
-                en el código como en el campo de fútbol es admirable. Siempre está dispuesto a
-                ayudar y compartir conocimientos."
-              </p>
+              <p className="mt-4 text-sm text-[var(--foreground)] italic">“{t("testimonials.t1.quote")}”</p>
               <div className="mt-6 h-px dark:bg-slate-700/60 bg-slate-200" />
               <div className="mt-4 flex items-center gap-4">
                 <div className="h-10 w-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">👤</div>
                 <div>
-                  <p className="text-[var(--foreground)] text-sm font-semibold">Juan Pablo Lucero</p>
-                  <p className="text-[var(--foreground)] text-xs">Estudiante de Software</p>
+                  <p className="text-[var(--foreground)] text-sm font-semibold">{t("testimonials.t1.name")}</p>
+                  <p className="text-[var(--foreground)] text-xs">{t("testimonials.t1.role")}</p>
                 </div>
               </div>
             </article>
@@ -362,16 +335,13 @@ export default function Home() {
                 <div className="text-cyan-400 text-sm">★★★★★</div>
                 <div className="text-cyan-400 text-xl font-bold">”</div>
               </div>
-              <p className="mt-4 text-sm text-[var(--foreground)] italic">
-                "Conocí a Sebastian en el curso de desarrollo web y es increíble su capacidad para
-                resolver problemas. Además es un gran deportista y muy buen amigo. Su página web quedó perfecta."
-              </p>
+              <p className="mt-4 text-sm text-[var(--foreground)] italic">“{t("testimonials.t2.quote")}”</p>
               <div className="mt-6 h-px dark:bg-slate-700/60 bg-slate-200" />
               <div className="mt-4 flex items-center gap-4">
                 <div className="h-10 w-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">👤</div>
                 <div>
-                  <p className="text-[var(--foreground)] text-sm font-semibold">Ubeimar Yepez</p>
-                  <p className="text-[var(--foreground)] text-xs">Estudiante de Software</p>
+                  <p className="text-[var(--foreground)] text-sm font-semibold">{t("testimonials.t2.name")}</p>
+                  <p className="text-[var(--foreground)] text-xs">{t("testimonials.t2.role")}</p>
                 </div>
               </div>
             </article>
@@ -382,16 +352,13 @@ export default function Home() {
                 <div className="text-cyan-400 text-sm">★★★★★</div>
                 <div className="text-cyan-400 text-xl font-bold">”</div>
               </div>
-              <p className="mt-4 text-sm text-[var(--foreground)] italic">
-                "Sebastian combina perfectamente la pasión por la tecnología con el deporte. Es
-                muy responsable, creativo y siempre entrega trabajos de calidad. Un gran compañero de estudios."
-              </p>
+              <p className="mt-4 text-sm text-[var(--foreground)] italic">“{t("testimonials.t3.quote")}”</p>
               <div className="mt-6 h-px dark:bg-slate-700/60 bg-slate-200" />
               <div className="mt-4 flex items-center gap-4">
                 <div className="h-10 w-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">👤</div>
                 <div>
-                  <p className="text-[var(--foreground)] text-sm font-semibold">Yuly Bastidas</p>
-                  <p className="text-[var(--foreground)] text-xs">Estudiante de Software</p>
+                  <p className="text-[var(--foreground)] text-sm font-semibold">{t("testimonials.t3.name")}</p>
+                  <p className="text-[var(--foreground)] text-xs">{t("testimonials.t3.role")}</p>
                 </div>
               </div>
             </article>
