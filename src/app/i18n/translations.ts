@@ -164,6 +164,14 @@ export const translations: Record<Lang, Record<string, string>> = {
     "interests.card.games.text": "Fan de los videojuegos; me gustan los retos y la estrategia.",
     "interests.card.gym.title": "Gimnasio",
     "interests.card.gym.text": "Ir al gym me ayuda a mantener disciplina y bienestar físico.",
+    // Future Projects
+    "future.title": "PROYECTOS FUTUROS",
+    "future.card.unity.title": "Juegos con Unity Hub",
+    "future.card.unity.text": "Planeo desarrollar videojuegos usando Unity, explorando gameplay y diseño.",
+    "future.card.next.title": "Aplicaciones con Next.js",
+    "future.card.next.text": "Construiré apps modernas con Next.js, enfocadas en rendimiento y UX.",
+    "future.card.clothing.title": "Sitio para emprendimiento de ropa",
+    "future.card.clothing.text": "Crearé una página para un futuro negocio de ropa, con catálogo y contacto.",
     // Theme
     "theme.toggle": "Alternar tema",
   },
@@ -321,6 +329,14 @@ export const translations: Record<Lang, Record<string, string>> = {
     "interests.card.games.text": "Big video game fan; I enjoy challenges and strategy.",
     "interests.card.gym.title": "Going to the gym",
     "interests.card.gym.text": "The gym helps me stay disciplined and physically well.",
+    // Future Projects
+    "future.title": "FUTURE PROJECTS",
+    "future.card.unity.title": "Games with Unity Hub",
+    "future.card.unity.text": "Plan to build video games with Unity, exploring gameplay and design.",
+    "future.card.next.title": "Apps with Next.js",
+    "future.card.next.text": "I will build modern apps with Next.js focused on performance and UX.",
+    "future.card.clothing.title": "Website for clothing venture",
+    "future.card.clothing.text": "I’ll create a site for a future clothing business, with catalog and contact.",
     // Theme
     "theme.toggle": "Toggle theme",
   },
