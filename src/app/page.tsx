@@ -502,12 +502,12 @@ export default function Home() {
                   className="h-9 w-9 flex items-center justify-center rounded-md bg-[var(--background)] border border-cyan-500/60 text-[var(--foreground)] hover:text-cyan-400"
                   >🐙</a>
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://wa.me/573164485328"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="LinkedIn"
+                    aria-label="WhatsApp"
                   className="h-9 w-9 flex items-center justify-center rounded-md bg-[var(--background)] border border-cyan-500/60 text-[var(--foreground)] hover:text-cyan-400"
-                  >in</a>
+                  >💬</a>
                   <a
                     href="https://www.instagram.com/"
                     target="_blank"
