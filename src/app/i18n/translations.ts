@@ -154,6 +154,16 @@ export const translations: Record<Lang, Record<string, string>> = {
     "footer.service.react": "Aplicaciones React",
     "footer.service.seo": "Optimización SEO",
     "footer.copy": "© {year} Portfolio. Todos los derechos reservados.",
+    // Interests / Hobbies
+    "interests.title": "INTERESES / PASATIEMPOS",
+    "interests.card.music.title": "Escuchar música",
+    "interests.card.music.text": "Me encanta descubrir nuevas canciones y géneros todos los días.",
+    "interests.card.football.title": "Jugar fútbol",
+    "interests.card.football.text": "El fútbol me mantiene activo y me enseña trabajo en equipo.",
+    "interests.card.games.title": "Videojuegos",
+    "interests.card.games.text": "Fan de los videojuegos; me gustan los retos y la estrategia.",
+    "interests.card.gym.title": "Gimnasio",
+    "interests.card.gym.text": "Ir al gym me ayuda a mantener disciplina y bienestar físico.",
     // Theme
     "theme.toggle": "Alternar tema",
   },
@@ -301,6 +311,16 @@ export const translations: Record<Lang, Record<string, string>> = {
     "footer.service.react": "React Applications",
     "footer.service.seo": "SEO Optimization",
     "footer.copy": "© {year} Portfolio. All rights reserved.",
+    // Interests / Hobbies
+    "interests.title": "INTERESTS / HOBBIES",
+    "interests.card.music.title": "Listening to music",
+    "interests.card.music.text": "I love discovering new songs and genres every day.",
+    "interests.card.football.title": "Playing soccer",
+    "interests.card.football.text": "Soccer keeps me active and teaches teamwork.",
+    "interests.card.games.title": "Video games",
+    "interests.card.games.text": "Big video game fan; I enjoy challenges and strategy.",
+    "interests.card.gym.title": "Going to the gym",
+    "interests.card.gym.text": "The gym helps me stay disciplined and physically well.",
     // Theme
     "theme.toggle": "Toggle theme",
   },
