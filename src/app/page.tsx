@@ -72,13 +72,13 @@ export default function Home() {
             <aside className="mx-auto w-full max-w-sm rounded-lg border border-cyan-500/60 bg-[var(--background)] p-5">
               <div className="flex flex-col items-center text-center">
                 <div className="relative h-28 w-28 rounded-full ring-2 ring-cyan-500/70 p-1 mb-3">
-                  <div className="rounded-full overflow-hidden">
+                  <div className="rounded-full overflow-hidden h-full w-full">
                     <Image
-                      src="/vercel.svg"
-                      alt="Avatar"
-                      width={112}
-                      height={112}
-                      className="scale-110"
+                      src="/WhatsApp Image 2025-11-18 at 11.05.38 PM.jpeg"
+                      alt="Foto de portada"
+                      fill
+                      className="h-full w-full object-cover object-center"
+                      priority
                     />
                   </div>
                 </div>
@@ -414,7 +414,15 @@ export default function Home() {
               <p className="mt-4 text-sm text-[var(--foreground)] italic">“{t("testimonials.t1.quote")}”</p>
               <div className="mt-6 h-px dark:bg-slate-700/60 bg-slate-200" />
               <div className="mt-4 flex items-center gap-4">
-                <div className="h-10 w-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">👤</div>
+                <div className="h-10 w-10 rounded-full overflow-hidden ring-1 ring-cyan-500/60">
+                  <Image
+                    src="/WhatsApp Image 2025-11-18 at 11.00.38 PM (1).jpeg"
+                    alt="Foto testimonio"
+                    width={40}
+                    height={40}
+                    className="object-cover object-center"
+                  />
+                </div>
                 <div>
                   <p className="text-[var(--foreground)] text-sm font-semibold">{t("testimonials.t1.name")}</p>
                   <p className="text-[var(--foreground)] text-xs">{t("testimonials.t1.role")}</p>
@@ -431,7 +439,15 @@ export default function Home() {
               <p className="mt-4 text-sm text-[var(--foreground)] italic">“{t("testimonials.t2.quote")}”</p>
               <div className="mt-6 h-px dark:bg-slate-700/60 bg-slate-200" />
               <div className="mt-4 flex items-center gap-4">
-                <div className="h-10 w-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">👤</div>
+                <div className="h-10 w-10 rounded-full overflow-hidden ring-1 ring-cyan-500/60">
+                  <Image
+                    src="/WhatsApp Image 2025-11-18 at 11.00.37 PM.jpeg"
+                    alt="Ubeimar Yepes"
+                    width={40}
+                    height={40}
+                    className="object-cover object-center"
+                  />
+                </div>
                 <div>
                   <p className="text-[var(--foreground)] text-sm font-semibold">{t("testimonials.t2.name")}</p>
                   <p className="text-[var(--foreground)] text-xs">{t("testimonials.t2.role")}</p>
@@ -448,7 +464,15 @@ export default function Home() {
               <p className="mt-4 text-sm text-[var(--foreground)] italic">“{t("testimonials.t3.quote")}”</p>
               <div className="mt-6 h-px dark:bg-slate-700/60 bg-slate-200" />
               <div className="mt-4 flex items-center gap-4">
-                <div className="h-10 w-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">👤</div>
+                <div className="h-10 w-10 rounded-full overflow-hidden ring-1 ring-cyan-500/60">
+                  <Image
+                    src="/WhatsApp Image 2025-11-18 at 11.00.38 PM.jpeg"
+                    alt="Yuly Bastidas"
+                    width={40}
+                    height={40}
+                    className="object-cover object-center"
+                  />
+                </div>
                 <div>
                   <p className="text-[var(--foreground)] text-sm font-semibold">{t("testimonials.t3.name")}</p>
                   <p className="text-[var(--foreground)] text-xs">{t("testimonials.t3.role")}</p>
