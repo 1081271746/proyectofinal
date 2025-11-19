@@ -23,6 +23,8 @@ export default function Footer() {
             <li><a className="hover:text-cyan-400" href="#inicio">{t("nav.home")}</a></li>
             <li><a className="hover:text-cyan-400" href="#acerca">{t("nav.about")}</a></li>
             <li><a className="hover:text-cyan-400" href="#proyectos">{t("nav.projects")}</a></li>
+            <li><a className="hover:text-cyan-400" href="#intereses">{t("nav.interests")}</a></li>
+            <li><a className="hover:text-cyan-400" href="#futuros">{t("nav.future")}</a></li>
             <li><a className="hover:text-cyan-400" href="#contacto">{t("nav.contact")}</a></li>
           </ul>
         </div>

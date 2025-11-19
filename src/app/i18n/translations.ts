@@ -10,6 +10,8 @@ export const translations: Record<Lang, Record<string, string>> = {
     "nav.experience": "Experiencia",
     "nav.testimonials": "Testimonios",
     "nav.contact": "Contacto",
+    "nav.interests": "Intereses/Pasatiempos",
+    "nav.future": "Proyectos a futuro",
 
     // Hero
     "hero.role": "Desarrollador de Software",
@@ -183,6 +185,8 @@ export const translations: Record<Lang, Record<string, string>> = {
     "nav.experience": "Experience",
     "nav.testimonials": "Testimonials",
     "nav.contact": "Contact",
+    "nav.interests": "Interests/Hobbies",
+    "nav.future": "Future Projects",
 
     "hero.role": "Web Developer",
     "hero.i_am": "I AM",
