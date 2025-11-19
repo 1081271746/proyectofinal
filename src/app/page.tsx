@@ -519,7 +519,7 @@ export default function Home() {
                 <p className="text-sm text-[var(--foreground)]">{t("contact.follow")}</p>
                 <div className="mt-3 flex items-center gap-3">
                   <a
-                    href="https://github.com/"
+                    href="https://github.com/dashboard"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub"
@@ -533,12 +533,12 @@ export default function Home() {
                   className="h-9 w-9 flex items-center justify-center rounded-md bg-[var(--background)] border border-cyan-500/60 text-[var(--foreground)] hover:text-cyan-400"
                   >💬</a>
                   <a
-                    href="https://www.instagram.com/"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=sebitasroja06@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Instagram"
+                    aria-label="Gmail"
                   className="h-9 w-9 flex items-center justify-center rounded-md bg-[var(--background)] border border-cyan-500/60 text-[var(--foreground)] hover:text-cyan-400"
-                  >📷</a>
+                  >📧</a>
                 </div>
               </div>
             </article>
