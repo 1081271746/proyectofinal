@@ -59,12 +59,6 @@ export default function Home() {
                 >
                   {t("hero.cv")}
                 </button>
-                <a
-                  href="mailto:sebitasroja06@gmail.com?subject=Contacto%20Portafolio"
-                  className="inline-flex items-center gap-2 rounded-md bg-cyan-500/80 px-4 py-2 text-sm font-medium text-slate-900 hover:bg-cyan-400"
-                >
-                  {t("hero.contact")}
-                </a>
               </div>
             </div>
 
@@ -488,9 +482,9 @@ export default function Home() {
           <div className="mx-auto mt-2 h-1 w-20 rounded bg-cyan-500" />
           <p className="mt-6 text-center text-[var(--foreground)] max-w-3xl mx-auto">{t("contact.intro")}</p>
 
-          <div className="mt-10 grid md:grid-cols-2 gap-8">
+          <div className="mt-10 flex justify-center">
             {/* Información de contacto */}
-            <article className="rounded-lg border border-cyan-500/60 bg-[var(--background)] p-6">
+            <article className="rounded-lg border border-cyan-500/60 bg-[var(--background)] p-6 w-full max-w-xl">
               <h3 className="text-lg font-semibold text-[var(--foreground)]">{t("contact.info.title")}</h3>
               <div className="mt-6 space-y-4">
                 <div className="flex items-center gap-3">
@@ -540,11 +534,18 @@ export default function Home() {
                   className="h-9 w-9 flex items-center justify-center rounded-md bg-[var(--background)] border border-cyan-500/60 text-[var(--foreground)] hover:text-cyan-400"
                   >📧</a>
                 </div>
+                <div className="mt-6">
+                  <a
+                    href="https://wa.me/573164485328"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-md bg-cyan-500/80 px-4 py-2 text-sm font-medium text-slate-900 hover:bg-cyan-400"
+                  >
+                    {t("form.send")}
+                  </a>
+                </div>
               </div>
             </article>
-
-            {/* Formulario de contacto (cliente con fallback) */}
-            <ContactForm />
           </div>
         </section>
 
