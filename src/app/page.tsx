@@ -8,9 +8,40 @@ import Footer from "./components/Footer";
 import ThemeToggle from "./components/ThemeToggle";
 import LanguageToggle from "./components/LanguageToggle";
 import { useI18n } from "./i18n/I18nProvider";
+import { jsPDF } from "jspdf";
 
 export default function Home() {
   const { t } = useI18n();
+
+  const handleDownloadCV = () => {
+    try {
+      const doc = new jsPDF({ unit: "mm", format: "a4" });
+      doc.setFont("helvetica", "normal");
+
+      // Título
+      doc.setFontSize(18);
+      doc.text("CV – SEBASTIAN ROJAS", 15, 20);
+
+      doc.setFontSize(12);
+      const content = `Desarrollador Web | Estudiante de Software\n\nDatos Personales\nNombre: Sebastian Rojas\nCorreo: sebastrog06@gmail.com\nTeléfono: 3166485328\nUbicación: Colombia\nLinkedIn / GitHub: (si quieres te los creo también)\n\nPerfil Profesional\nSoy un desarrollador web apasionado por la tecnología y la creación de soluciones digitales innovadoras. Me caracterizo por ser una persona dedicada, creativa y orientada a resultados. Busco constantemente mejorar mis habilidades y afrontar nuevos desafíos para ofrecer productos digitales de alta calidad.\n\nMi enfoque combina buenas prácticas de desarrollo, diseño moderno y funcionalidad centrada en el usuario.\n\nEducación\nBachiller\nColegio Filipense 2011 – 2022\nGraduado con excelentes calificaciones. Desarrollé habilidades de liderazgo, trabajo en equipo y comunicación.\n\nCursos de Inglés\n2020 – 2023\nFormación en inglés para mejorar mis habilidades comunicativas y el acceso a recursos técnicos internacionales.\n\nExperiencia Laboral\nAsistente de Ventas\nAlmacén de Ropa Familiar | 2021 – Presente\nApoyo en las operaciones diarias del negocio familiar, gestionando inventario y ofreciendo atención personalizada al cliente.\n\nResponsabilidades principales:\n• Atención personalizada al cliente\n• Gestión de inventario\n• Organización de mercancía\n• Apoyo en estrategias de venta\n\nProyectos Realizados\nPágina Web para Negocio Familiar\nDesarrollo completo de un sitio web para un negocio familiar, integrando catálogo de productos, contacto y diseño responsive.\nCaracterísticas:\n• Diseño responsive\n• Catálogo de productos\n• Formulario de contacto\n• Optimización SEO\nTecnologías: React, CSS, JavaScript\n\nSistema de Reservas para Barbería\nAplicación web funcional para gestionar citas, calendarios y clientes en una barbería.\nCaracterísticas:\n• Sistema completo de reservas\n• Calendario interactivo\n• Gestión de clientes\n• Notificaciones automáticas\nTecnologías: React, Node.js, MongoDB\n\nHabilidades Técnicas\n• Desarrollo Frontend (React, HTML, CSS, JavaScript)\n• Diseño responsive\n• Sistemas de reservas\n• Manejo de bases de datos\n• Versionamiento con Git/GitHub\n• Optimización SEO\n• Trabajo en equipo y resolución de problemas\n\nIntereses Personales\n• Pasión por el fútbol: Me ayuda a mantenerme activo, trabajar en equipo y desconectarme del mundo digital.\n• Emprendimiento: Co-propietario de una tienda de gorras; experiencia en ventas y negocios.\n• Fan de Spider-Man: Me inspira por su filosofía de responsabilidad y superación.\n\nProyectos Futuros\n• Plataforma web para gestionar torneos de fútbol amateur.\n• Aplicación móvil de recordatorios inteligentes con IA.\n• Página web para emprendimiento de ropa urbana (gorras y oversize).\n\nContacto\nCorreo: sebastrog06@gmail.com\nTeléfono: 3166485328\nDisponible para proyectos freelance y colaboraciones.`;
+
+      const lines = doc.splitTextToSize(content, 180) as string[];
+      let y = 30;
+      const lineHeight = 6;
+      lines.forEach((line: string) => {
+        if (y > 280) {
+          doc.addPage();
+          y = 20;
+        }
+        doc.text(line, 15, y);
+        y += lineHeight;
+      });
+
+      doc.save("CV-Sebastian-Rojas.pdf");
+    } catch (err) {
+      console.error("Error generating CV PDF", err);
+    }
+  };
   return (
     <main className="min-h-screen">
       {/* Marco exterior similar a la imagen */}
@@ -56,8 +87,8 @@ export default function Home() {
               <div className="mt-6 flex flex-wrap gap-3">
                 <button
                   type="button"
-                  disabled
-                  className="inline-flex items-center gap-2 rounded-md border border-cyan-500/60 bg-slate-900 px-4 py-2 text-sm text-slate-200 shadow cursor-not-allowed"
+                  onClick={handleDownloadCV}
+                  className="inline-flex items-center gap-2 rounded-md border border-cyan-500/60 bg-slate-900 px-4 py-2 text-sm text-slate-200 shadow hover:shadow-md"
                 >
                   {t("hero.cv")}
                 </button>

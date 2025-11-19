@@ -155,7 +155,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "footer.service.responsive": "Diseño Responsive",
     "footer.service.react": "Aplicaciones React",
     "footer.service.seo": "Optimización SEO",
-    "footer.copy": "© {year} Portfolio. Todos los derechos reservados.",
+    "footer.copy": "© {year} Portafolio. Todos los derechos reservados.",
     // Interests / Hobbies
     "interests.title": "INTERESES / PASATIEMPOS",
     "interests.card.music.title": "Escuchar música",
