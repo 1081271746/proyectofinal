@@ -27,6 +27,8 @@ export default function Home() {
               <li><a className="hover:text-cyan-400" href="#proyectos">{t("nav.projects")}</a></li>
               <li><a className="hover:text-cyan-400" href="#experiencia">{t("nav.experience")}</a></li>
               <li><a className="hover:text-cyan-400" href="#testimonios">{t("nav.testimonials")}</a></li>
+              <li><a className="hover:text-cyan-400" href="#intereses">{t("nav.interests")}</a></li>
+              <li><a className="hover:text-cyan-400" href="#futuros">{t("nav.future")}</a></li>
               <li><a className="hover:text-cyan-400" href="#contacto">{t("nav.contact")}</a></li>
             </ul>
             {/* Controles */}
